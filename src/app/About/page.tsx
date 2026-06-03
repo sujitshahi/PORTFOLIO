@@ -11,7 +11,7 @@ export default function About() {
       <div className=" text-[2rem] md:text-[2.8rem] font-bold mt-8 mb-12 flex items-center gap-3 relative w-fit
         after:content-[''] after:absolute after:-bottom-2 after:left-0 
         after:h-0.75 after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
-        animate-title after:w-full after:transition-[width] after:duration-1000 after:ease-out after:delay-300">
+       after:w-full">
         About <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] backdrop-blur-xs font-normal border border-white/5 shadow-inner">Myself</span>
       </div>
       
