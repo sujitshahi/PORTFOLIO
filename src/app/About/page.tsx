@@ -8,7 +8,7 @@ export default function About() {
       {/* =========================================================================
           SECTION TITLE: ABOUT MYSELF
           ========================================================================= */}
-      <div className="section-title text-[2rem] md:text-[2.8rem] font-bold tracking-tight mt-8 mb-12 flex items-center gap-3 relative w-fit select-none reveal-title
+      <div className=" text-[2rem] md:text-[2.8rem] font-bold mt-8 mb-12 flex items-center gap-3 relative w-fit
         after:content-[''] after:absolute after:-bottom-2 after:left-0 
         after:h-0.75 after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
         animate-title after:w-full after:transition-[width] after:duration-1000 after:ease-out after:delay-300">
@@ -20,7 +20,7 @@ export default function About() {
         {/* Card 1: Who Am I? */}
         <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
           hover:border-[#a78bfa]/40 hover:-translate-y-2 hover:shadow-[0_30px_60px_-15px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100">
-          <div className="absolute -inset-px bg-linear-to-r from-[#a78bfa]/20 to-[#60a5fa]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-[32px] blur-sm pointer-events-none -z-10" />
+          <div className="absolute -inset-px bg-linear-to-r from-[#a78bfa]/20 to-[#60a5fa]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-4xl blur-sm pointer-events-none -z-10" />
           <h3 className="text-xl font-semibold mb-4 text-white flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1">
             👋 Who Am I?
           </h3>
@@ -33,9 +33,9 @@ export default function About() {
         </div>
         
         {/* Card 2: My Approach */}
-        <div className="bg-[#141414]/40 backdrop-blur-[12px] border border-white/5 rounded-[32px] p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
+        <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
           hover:border-[#60a5fa]/40 hover:-translate-y-2 hover:shadow-[0_30px_60px_-15px_rgba(96,165,250,0.15)] group reveal-card animate-in delay-200">
-          <div className="absolute -inset-px bg-linear-to-r from-[#60a5fa]/20 to-[#a78bfa]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-[32px] blur-sm pointer-events-none -z-10" />
+          <div className="absolute -inset-px bg-linear-to-r from-[#60a5fa]/20 to-[#a78bfa]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-4xl blur-sm pointer-events-none -z-10" />
           <h3 className="text-xl font-semibold mb-4 text-white flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1">
             💡 My Approach
           </h3>
@@ -60,15 +60,15 @@ export default function About() {
           SECTION TITLE: ACHIEVEMENTS & AWARDS
           ========================================================================= */}
       <div className="section-title text-[2rem] md:text-[2.8rem] font-bold tracking-tight mt-20 mb-12 flex items-center gap-3 relative w-fit select-none reveal-title
-        after:content-[''] after:absolute after:bottom-[-8px] after:left-0 
-        after:h-[3px] after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
-        after:w-0 animate-title after:w-full after:transition-[width] after:duration-1000 after:ease-out after:delay-300">
-        Achievements <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] backdrop-blur-[4px] font-normal border border-white/5 shadow-inner">& Awards</span>
+        after:content-[''] after:absolute after:-bottom-2 after:left-0 
+        after:h-0.75 after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
+        animate-title after:w-full after:transition-[width] after:duration-1000 after:ease-out after:delay-300">
+        Achievements <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] backdrop-blur-xs font-normal border border-white/5 shadow-inner">& Awards</span>
       </div>
       
       {/* Achievements Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8 achievements-grid">
-        <div className="bg-[#141414]/40 backdrop-blur-[12px] border border-white/5 rounded-[32px] p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
+        <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
           hover:border-[#a78bfa]/30 hover:-translate-y-1.5 hover:shadow-xl group reveal-card animate-in delay-100">
           <h3 className="text-lg font-semibold mb-3 text-white tracking-wide group-hover:text-[#a78bfa] transition-colors duration-300">
             🏆 Performance Optimization
