@@ -75,14 +75,14 @@ export default function About() {
           </h3>
           <p className="text-[#aaa] text-[0.9rem] leading-relaxed">30% runtime delivery speed improvement on production builds.</p>
         </div>
-        <div className="bg-[#141414]/40 backdrop-blur-[12px] border border-white/5 rounded-[32px] p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
+        <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
           hover:border-[#a78bfa]/30 hover:-translate-y-1.5 hover:shadow-xl group reveal-card animate-in delay-200">
           <h3 className="text-lg font-semibold mb-3 text-white tracking-wide group-hover:text-[#a78bfa] transition-colors duration-300">
             🎓 Industry Training Drive
           </h3>
           <p className="text-[#aaa] text-[0.9rem] leading-relaxed">Advanced Stack Certification | MindRisers Institute.</p>
         </div>
-        <div className="bg-[#141414]/40 backdrop-blur-[12px] border border-white/5 rounded-[32px] p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
+        <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
           hover:border-[#a78bfa]/30 hover:-translate-y-1.5 hover:shadow-xl group reveal-card animate-in delay-300">
           <h3 className="text-lg font-semibold mb-2 text-white tracking-wide group-hover:text-[#a78bfa] transition-colors duration-300">
             📜 Full-Stack Certification
@@ -98,10 +98,10 @@ export default function About() {
           SECTION TITLE: LANGUAGES I SPEAK
           ========================================================================= */}
       <div className="section-title text-[2rem] md:text-[2.8rem] font-bold tracking-tight mt-20 mb-12 flex items-center gap-3 relative w-fit select-none reveal-title
-        after:content-[''] after:absolute after:bottom-[-8px] after:left-0 
-        after:h-[3px] after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
-        after:w-0 animate-title after:w-full after:transition-[width] after:duration-1000 after:ease-out after:delay-300">
-        Languages <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] backdrop-blur-[4px] font-normal border border-white/5 shadow-inner">I Speak</span>
+        after:content-[''] after:absolute after:-bottom-2 after:left-0 
+        after:h-0.75 after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
+        animate-title after:w-full after:transition-[width] after:duration-1000 after:ease-out after:delay-300">
+        Languages <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] backdrop-blur-md font-normal border border-white/5 shadow-inner">I Speak</span>
       </div>
       
       {/* Languages Badges */}
