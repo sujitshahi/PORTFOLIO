@@ -5,14 +5,26 @@ export default function About() {
   return (
     <div id="about-page" className="max-w-325 mx-auto px-8 py-8 md:py-16 text-[#ededed] font-sans overflow-hidden">
       
+      
       {/* =========================================================================
           SECTION TITLE: ABOUT MYSELF
-          ========================================================================= */}
-      <div className=" text-[2rem] md:text-[2.8rem] font-bold mt-8 mb-12 flex items-center gap-3 relative w-fit
-        after:content-[''] after:absolute after:-bottom-2 after:left-0 
+          =========================================================================
+     */}
+
+
+      <div className="text-[2rem] md:text-[2.8rem] font-bold mt-8 mb-12 flex items-center gap-3 relative w-fit
+        after:absolute after:-bottom-2 after:left-0 
         after:h-0.75 after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
-       after:w-full">
-        About <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] backdrop-blur-xs font-normal border border-white/5 shadow-inner">Myself</span>
+        after:w-full">
+        
+        {/* Wrapped "About" in a span with the identical gradient config */}
+        <span className="bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
+          About
+        </span>
+
+        <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] text-white backdrop-blur-xs font-normal border border-white/5 shadow-inner">
+          Myself
+        </span>
       </div>
       
       {/* About Cards Grid */}
@@ -56,14 +68,27 @@ export default function About() {
         </div>
       </div>
 
+
+
       {/* =========================================================================
           SECTION TITLE: ACHIEVEMENTS & AWARDS
-          ========================================================================= */}
+          ========================================================================= 
+      */}
+     
+
       <div className="section-title text-[2rem] md:text-[2.8rem] font-bold tracking-tight mt-20 mb-12 flex items-center gap-3 relative w-fit select-none reveal-title
         after:content-[''] after:absolute after:-bottom-2 after:left-0 
         after:h-0.75 after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
         animate-title after:w-full after:transition-[width] after:duration-1000 after:ease-out after:delay-300">
-        Achievements <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] backdrop-blur-xs font-normal border border-white/5 shadow-inner">& Awards</span>
+        
+        {/* Wrapped "Achievements" in a span with matching linear gradient */}
+        <span className="bg-linear-to-r from-[#a78bfa] to-[#60a5fa] bg-clip-text text-transparent">
+          Achievements
+        </span>
+
+        <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] text-white backdrop-blur-xs font-normal border border-white/5 shadow-inner">
+          & Awards
+        </span>
       </div>
       
       {/* Achievements Grid */}
