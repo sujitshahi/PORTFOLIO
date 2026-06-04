@@ -135,7 +135,8 @@ export default function About() {
           { label: 'English', flag: '🇬🇧' },
           { label: 'Nepali', flag: '🇳🇵' },
           { label: 'Hindi', flag: '🇮🇳' },
-          { label: 'Newari', flag: '🗣️' }
+          { label: 'Newari', flag: '🗣️' },
+          { label: 'Maithili', flag: '🗣️' }
         ].map((lang, idx) => (
           <span 
             key={idx}
