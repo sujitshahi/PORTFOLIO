@@ -4,7 +4,7 @@
 export default function About() {
   return (
     <div id="about-page" className="max-w-325 mx-auto px-8 py-8 md:py-16 text-[#ededed] font-sans overflow-hidden">
-      
+
       
       {/* =========================================================================
           SECTION TITLE: ABOUT MYSELF
@@ -16,7 +16,7 @@ export default function About() {
         after:absolute after:-bottom-2 after:left-0 
         after:h-0.75 after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
         after:w-full">
-        
+        <p>hsdgfhg</p>
         {/* Wrapped "About" in a span with the identical gradient config */}
         <span className="bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
           About
