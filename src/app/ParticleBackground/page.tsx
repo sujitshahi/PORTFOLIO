@@ -981,7 +981,7 @@
 'use client';
 import { useEffect, useRef } from 'react';
 
-export default function ParticleBackgroundgit a() {
+export default function ParticleBackground() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
