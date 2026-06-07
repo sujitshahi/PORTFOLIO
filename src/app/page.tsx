@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] text-[#ededed] font-sans overflow-x-hidden selection:bg-[#a78bfa]/30">
-      <div className="max-w-[1300px] mx-auto px-4 sm:px-8 pt-8 pb-16 relative z-10">
+      <div className="max-w-325 mx-auto px-4 sm:px-8 pt-8 pb-16 relative z-10">
         
         {/* HERO SECTION */}
         <section className="min-h-[85vh] flex flex-col-reverse md:flex-row items-center gap-12 mb-12">
@@ -16,17 +16,17 @@ export default function HomePage() {
               ✦ OPEN FOR OPPORTUNITIES
             </div>
             
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none bg-gradient-to-r from-white via-[#a78bfa] to-[#60a5fa] bg-clip-text text-transparent mb-4 bg-[length:100%_100%] hover:bg-[length:200%_100%] hover:bg-right transition-all duration-700 ease-in-out">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none bg-linear-to-r from-white via-[#a78bfa] to-[#60a5fa] bg-clip-text text-transparent mb-4 bg-[length:100%_100%] hover:bg-[length:200%_100%] hover:bg-right transition-all duration-700 ease-in-out">
               Sujit Shahi
             </h1>
             
             <TypedText />
             
-            <p className="text-lg text-neutral-400 max-w-[500px] mb-8 leading-relaxed">
+            <p className="text-lg text-neutral-400 max-w-125 mb-8 leading-relaxed">
               Front-End Developer with a full-stack foundation, specializing in responsive interfaces using HTML, CSS, and React. Passionate about crafting seamless user experiences.
             </p>
             
-            <button className="relative group overflow-hidden bg-gradient-to-r from-white to-neutral-200 text-black px-8 py-3.5 rounded-full font-semibold text-base transition-all duration-300 shadow-[0_4px_15px_rgba(255,255,255,0.1)] hover:shadow-[0_4px_25px_rgba(167,139,250,0.4)] hover:scale-105 active:scale-95 flex items-center gap-2">
+            <button className="relative group overflow-hidden bg-linear-to-r from-white to-neutral-200 text-black px-8 py-3.5 rounded-full font-semibold text-base transition-all duration-300 shadow-[0_4px_15px_rgba(255,255,255,0.1)] hover:shadow-[0_4px_25px_rgba(167,139,250,0.4)] hover:scale-105 active:scale-95 flex items-center gap-2">
               <span className="relative z-10 transition-all duration-300 group-hover:pr-2">View my work →</span>
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 bg-black/5 rounded-full transition-all duration-500 ease-out group-hover:w-72 group-hover:h-72" />
             </button>
