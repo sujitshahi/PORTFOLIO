@@ -611,47 +611,50 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* SKILLS SECTION */}
+      
+
+
+
+
+
         <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8 tracking-tight flex items-center gap-3 relative before:absolute before:-bottom-2 before:left-0 before:w-32 before:h-[3px] before:bg-gradient-to-r before:from-[#a78bfa] before:to-[#60a5fa]">
-            Technical <span className="bg-white/5 px-3 py-1 rounded-full text-sm font-normal backdrop-blur-sm">Skills</span>
-          </h2>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="bg-neutral-900/60 backdrop-blur-xl border border-white/5 rounded-[32px] p-8 transition-all duration-300 ease-out hover:border-[#a78bfa]/50 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]">
-              <CardContent className="p-0">
-                <h3 className="text-base font-bold text-[#a78bfa] mb-4 flex items-center gap-2">💻 Languages</h3>
-                <div className="flex flex-wrap gap-2.5">
-                  <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">JavaScript (ES6+)</span>
-                  <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">HTML5</span>
-                  <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">CSS3</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-neutral-900/60 backdrop-blur-xl border border-white/5 rounded-[32px] p-8 transition-all duration-300 ease-out hover:border-[#a78bfa]/50 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]">
-              <CardContent className="p-0">
-                <h3 className="text-base font-bold text-[#a78bfa] mb-4 flex items-center gap-2">⚡ Frameworks</h3>
-                <div className="flex flex-wrap gap-2.5">
-                  <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">React.js</span>
-                  <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">Next.js</span>
-                  <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">Tailwind CSS</span>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="bg-neutral-900/60 backdrop-blur-xl border border-white/5 rounded-[32px] p-8 transition-all duration-300 ease-out hover:border-[#a78bfa]/50 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]">
-              <CardContent className="p-0">
-                <h3 className="text-base font-bold text-[#a78bfa] mb-4 flex items-center gap-2">🛠️ Tools</h3>
-                <div className="flex flex-wrap gap-2.5">
-                  <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">Git & GitHub</span>
-                  <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">VS Code</span>
-                  <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">Figma</span>
-                </div>
-              </CardContent>
-            </Card>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8 tracking-tight flex items-center gap-3 relative before:absolute before:-bottom-2 before:left-0 before:w-32 before:h-[3px] before:bg-gradient-to-r before:from-[#a78bfa] before:to-[#60a5fa]">
+          Technical <span className="bg-white/5 px-3 py-1 rounded-full text-sm font-normal backdrop-blur-sm">Skills</span>
+        </h2>
+        
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Card 1 - Replaced with HTML div */}
+  
+          <div className="bg-neutral-900/60 backdrop-blur-xl border border-transparent rounded-[32px] p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] hover:border-[#a78bfa]/50">
+            <h3 className="text-base font-bold text-[#a78bfa] mb-4 flex items-center gap-2">💻 Languages</h3>
+            <div className="flex flex-wrap gap-2.5">
+              <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">JavaScript (ES6+)</span>
+              <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">HTML5</span>
+              <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">CSS3</span>
+            </div>
           </div>
-        </section>
+
+          {/* Card 2 - Replaced with HTML div */}
+          <div className="bg-neutral-900/60 backdrop-blur-xl border border-transparent rounded-[32px] p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] hover:border-[#a78bfa]/50">
+            <h3 className="text-base font-bold text-[#a78bfa] mb-4 flex items-center gap-2">⚡ Frameworks</h3>
+            <div className="flex flex-wrap gap-2.5">
+              <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">React.js</span>
+              <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">Next.js</span>
+              <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">Tailwind CSS</span>
+            </div>
+          </div>
+
+          {/* Card 3 - Replaced with HTML div */}
+         <div className="bg-neutral-900/60 backdrop-blur-xl border border-transparent rounded-[32px] p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] hover:border-[#a78bfa]/50">
+            <h3 className="text-base font-bold text-[#a78bfa] mb-4 flex items-center gap-2">🛠️ Tools</h3>
+            <div className="flex flex-wrap gap-2.5">
+              <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">Git & GitHub</span>
+              <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">VS Code</span>
+              <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">Figma</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
       </div>
     </main>
