@@ -39,7 +39,7 @@ export default function TypedText() {
   }, [charIndex, isDeleting, roleIndex]);
 
   return (
-    <div className="text-xl text-[#a78bfa] mb-4 min-h-[2rem] after:content-['|'] after:animate-[pulse_1s_infinite]">
+    <div className="text-xl text-[#a78bfa] mb-4 min-h-8 after:content-['|'] after:animate-[pulse_1s_infinite]">
       {text}
     </div>
   );
