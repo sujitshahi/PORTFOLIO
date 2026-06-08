@@ -73,7 +73,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-
+// 1. Updated NavItem props to accept an optional React node for the icon
 interface NavItemProps {
   href: string;
   children: React.ReactNode;
@@ -156,9 +156,6 @@ export default function Navbar() {
           Contact
         </NavItem>
         
-
-
-
       </div>
     </nav>
   );
