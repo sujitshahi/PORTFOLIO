@@ -51,9 +51,21 @@ export default function Page() {
 
 
         <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8 tracking-tight flex items-center gap-3 relative before:absolute before:-bottom-2 before:left-0 before:w-65 before:h-0.75 before:bg-linear-to-r before:from-[#a78bfa] before:to-[#60a5fa]">
-            Education <span className="bg-white/5 px-3 py-1 rounded-full text-sm font-normal backdrop-blur-sm border border-white/5">Background</span>
-          </h2>
+         
+          <div className="text-[2rem] md:text-[2.8rem] font-bold mt-8 mb-12 flex items-center gap-3 relative w-fit
+            after:absolute after:-bottom-2 after:left-0 
+            after:h-0.75 after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
+            after:w-full">
+            
+         
+            <h2 className="bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
+              Education
+            </h2>
+
+            <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] text-white backdrop-blur-xs font-normal border border-white/5 shadow-inner">
+              background
+            </span>
+          </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-neutral-900/60 backdrop-blur-xl border border-white/5 rounded-4xl p-8 transition-all duration-300 ease-out hover:border-[#a78bfa]/50 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]">
@@ -75,17 +87,24 @@ export default function Page() {
       
 
         <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8 tracking-tight flex items-center gap-3 relative before:absolute before:-bottom-2 before:left-0 before:w-52 before:h-0.75 before:bg-linear-to-r before:from-[#a78bfa] before:to-[#60a5fa]">
-            Technical <span className="bg-white/5 px-3 py-1 rounded-full text-sm font-normal backdrop-blur-sm">Skills</span>
-          </h2>
-          
 
+          <div className="text-[2rem] md:text-[2.8rem] font-bold mt-8 mb-12 flex items-center gap-3 relative w-fit
+            after:absolute after:-bottom-2 after:left-0 
+            after:h-0.75 after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
+            after:w-full">
+            
+         
+            <h2 className="bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
+              Technical
+            </h2>
 
-
+            <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] text-white backdrop-blur-xs font-normal border border-white/5 shadow-inner">
+              Skills
+            </span>
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         
-    
             <div className="bg-neutral-900/60 backdrop-blur-xl border border-transparent rounded-4xl p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] hover:border-[#a78bfa]/50">
               <h3 className="text-base font-bold text-[#a78bfa] mb-4 flex items-center gap-2">💻 Languages</h3>
               <div className="flex flex-wrap gap-2.5">
