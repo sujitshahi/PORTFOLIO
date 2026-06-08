@@ -79,6 +79,10 @@ export default function Page() {
             Technical <span className="bg-white/5 px-3 py-1 rounded-full text-sm font-normal backdrop-blur-sm">Skills</span>
           </h2>
           
+
+
+
+
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         
     
@@ -114,6 +118,13 @@ export default function Page() {
         </section>
 
       </div>
+
+
+
+
+
+
+  
     </main>
   );
 }
