@@ -51,7 +51,7 @@ export default function Page() {
 
 
         <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8 tracking-tight flex items-center gap-3 relative before:absolute before:-bottom-2 before:left-0 before:w-32 before:h-0.75 before:bg-linear-to-r before:from-[#a78bfa] before:to-[#60a5fa]">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 tracking-tight flex items-center gap-3 relative before:absolute before:-bottom-2 before:left-0 before:w-65 before:h-0.75 before:bg-linear-to-r before:from-[#a78bfa] before:to-[#60a5fa]">
             Education <span className="bg-white/5 px-3 py-1 rounded-full text-sm font-normal backdrop-blur-sm border border-white/5">Background</span>
           </h2>
           
@@ -75,7 +75,7 @@ export default function Page() {
       
 
         <section className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-8 tracking-tight flex items-center gap-3 relative before:absolute before:-bottom-2 before:left-0 before:w-32 before:h-0.75 before:bg-linear-to-r before:from-[#a78bfa] before:to-[#60a5fa]">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-8 tracking-tight flex items-center gap-3 relative before:absolute before:-bottom-2 before:left-0 before:w-52 before:h-0.75 before:bg-linear-to-r before:from-[#a78bfa] before:to-[#60a5fa]">
             Technical <span className="bg-white/5 px-3 py-1 rounded-full text-sm font-normal backdrop-blur-sm">Skills</span>
           </h2>
           
