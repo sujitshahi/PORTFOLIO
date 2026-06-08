@@ -109,11 +109,13 @@ export default function About() {
 
 
       <div className="section-title text-[2rem] md:text-[2.8rem] font-bold tracking-tight mt-20 mb-12 flex items-center gap-3 relative w-fit select-none reveal-title
-        after:content-[''] after:absolute after:-bottom-2 after:left-0 
-        after:h-0.75 after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
-        animate-title after:w-full after:transition-[width] after:duration-1000 after:ease-out after:delay-300">
-        Languages <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] backdrop-blur-md font-normal border border-white/5 shadow-inner">I Speak</span>
+              after:content-[''] after:absolute after:-bottom-2 after:left-0 
+              after:h-0.75 after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa]  bg-linear-to-r from-[#a78bfa] to-[#60a5fa] bg-clip-text text-transparent
+              animate-title after:w-full after:transition-[width] after:duration-1000 after:ease-out after:delay-300">
+        Languages<span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] backdrop-blur-md font-normal border border-white/5 shadow-inner text-white">I Speak</span>
       </div>
+
+      
       
    
       <div className="text-center my-6 flex flex-wrap justify-start sm:justify-center gap-3">
@@ -126,7 +128,7 @@ export default function About() {
         ].map((lang, idx) => (
           <span 
             key={idx}
-            className="inline-flex items-center gap-2 bg-[#1c1c1e]/60 border border-white/5 px-5 py-2.5 rounded-[40px] text-[0.9rem] tracking-wide text-neutral-300 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]
+            className="inline-flex items-center gap-2  bg-[#1c1c1e]/60 border border-white/5 px-5 py-2.5 rounded-[40px] text-[0.9rem] tracking-wide text-neutral-300 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]
               transition-all duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:bg-[#a78bfa]/10 hover:border-[#a78bfa]/40 hover:-translate-y-1 hover:scale-105 hover:text-white cursor-default select-none shadow-sm"
           >
             <span>{lang.flag}</span>
