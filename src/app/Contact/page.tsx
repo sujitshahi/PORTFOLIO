@@ -106,8 +106,19 @@ export default function ContactPage() {
           </div>
         </div>
 
+
+
+
         {/* Right Side: Message Input Form Container */}
-        <div className="bg-zinc-900/60 backdrop-blur-xl border border-white/10 rounded-4xl p-8 transition-all duration-300 hover:border-violet-500/40">
+
+
+
+
+
+        
+
+
+ <div className="bg-zinc-900/60 backdrop-blur-xl border border-white/10 rounded-4xl p-8 transition-all duration-300 hover:border-violet-500/40">
           <h3 className="text-2xl font-semibold mb-4 text-white">Send a Message</h3>
           
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
@@ -163,7 +174,11 @@ export default function ContactPage() {
           </form>
         </div>
 
+       
       </div>
     </div>
   );
 }
+
+
+
