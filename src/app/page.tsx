@@ -26,9 +26,8 @@ export default function Page() {
               Front-End Developer with a full-stack foundation, specializing in responsive interfaces using HTML, CSS, and React. Passionate about crafting seamless user experiences.
             </p>
             
-            <button className="relative group overflow-hidden bg-linear-to-r from-white to-neutral-200 text-black px-8 py-3.5 rounded-full font-semibold text-base transition-all duration-300 shadow-[0_4px_15px_rgba(255,255,255,0.1)] hover:shadow-[0_4px_25px_rgba(167,139,250,0.4)] hover:scale-105 active:scale-95 flex items-center gap-2">
-              <span className="relative z-10 transition-all duration-300 group-hover:pr-2">View my work →</span>
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 bg-black/5 rounded-full transition-all duration-500 ease-out group-hover:w-72 group-hover:h-72" />
+            <button className=" cursor-pointer transition-all duration-300 ease-in-out  bg-white text-black px-8 py-3.5 rounded-full hover:shadow-[0_4px_25px_rgba(167,139,250,0.4)] hover:scale-105">
+              View my work →
             </button>
           </div>
 
@@ -69,16 +68,17 @@ export default function Page() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-neutral-900/60 backdrop-blur-xl border border-white/5 rounded-4xl p-8 transition-all duration-300 ease-out hover:border-[#a78bfa]/50 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]">
+            <div className="group bg-neutral-900/60 backdrop-blur-xl border border-white/5 rounded-4xl p-8 transition-all duration-300 ease-out hover:border-[#a78bfa]/50 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]">
               <div className="text-3xl mb-4">🎓</div>
-              <div className="font-semibold text-xl text-[#a78bfa]">NEB +2 - Management</div>
+              <h2 className="font-semibold text-xl group-hover:text-[#a78bfa] transition-colors">NEB +2 - Management</h2>
               <div className="text-neutral-300 my-1">Carina International Academy, Kathmandu</div>
               <div className="text-xs text-neutral-500 uppercase tracking-wider font-medium mt-2">Graduated: 2016</div>
             </div>
 
-            <div className="bg-neutral-900/60 backdrop-blur-xl border border-white/5 rounded-4xl p-8 transition-all duration-300 ease-out hover:border-[#a78bfa]/50 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]">
+           
+            <div className="group bg-neutral-900/60 backdrop-blur-xl border border-white/5 rounded-4xl p-8 transition-all duration-300 ease-out hover:border-[#a78bfa]/50 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]">
               <div className="text-3xl mb-4">📚</div>
-              <div className="font-semibold text-xl text-[#a78bfa]">SEE</div>
+              <h2 className="font-semibold text-xl group-hover:text-[#a78bfa] transition-colors">SEE</h2>
               <div className="text-neutral-300 my-1">Academy Of Sacred Hearts</div>
               <div className="text-xs text-neutral-500 uppercase tracking-wider font-medium mt-2">Graduated: 2013</div>
             </div>
@@ -109,9 +109,9 @@ export default function Page() {
             <div className="bg-neutral-900/60 backdrop-blur-xl border border-transparent rounded-4xl p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] hover:border-[#a78bfa]/50">
               <h3 className="text-base font-bold text-[#a78bfa] mb-4 flex items-center gap-2">💻 Languages</h3>
               <div className="flex flex-wrap gap-2.5">
-                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">JavaScript (ES6+)</span>
-                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">HTML5</span>
-                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">CSS3</span>
+                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm  duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">JavaScript (ES6+)</span>
+                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">HTML5</span>
+                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm   duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">CSS3</span>
               </div>
             </div>
 
@@ -119,9 +119,9 @@ export default function Page() {
             <div className="bg-neutral-900/60 backdrop-blur-xl border border-transparent rounded-4xl p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] hover:border-[#a78bfa]/50">
               <h3 className="text-base font-bold text-[#a78bfa] mb-4 flex items-center gap-2">⚡ Frameworks</h3>
               <div className="flex flex-wrap gap-2.5">
-                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">React.js</span>
-                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">Next.js</span>
-                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">Tailwind CSS</span>
+                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">React.js</span>
+                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">Next.js</span>
+                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">Tailwind CSS</span>
               </div>
             </div>
 
@@ -129,9 +129,9 @@ export default function Page() {
           <div className="bg-neutral-900/60 backdrop-blur-xl border border-transparent rounded-4xl p-8 transition-all duration-300 ease-out hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] hover:border-[#a78bfa]/50">
               <h3 className="text-base font-bold text-[#a78bfa] mb-4 flex items-center gap-2">🛠️ Tools</h3>
               <div className="flex flex-wrap gap-2.5">
-                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">Git & GitHub</span>
-                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">VS Code</span>
-                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)]">Figma</span>
+                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">Git & GitHub</span>
+                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">VS Code</span>
+                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">Figma</span>
               </div>
             </div>
           </div>

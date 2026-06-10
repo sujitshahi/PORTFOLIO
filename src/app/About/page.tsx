@@ -28,7 +28,7 @@ export default function About() {
         <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
           hover:border-[#a78bfa]/40 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100">
           <div className="absolute -inset-px bg-linear-to-r from-[#a78bfa]/20 to-[#60a5fa]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-4xl blur-sm pointer-events-none -z-10" />
-          <h3 className="text-xl font-semibold mb-4 text-white flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1">
+          <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#a78bfa]">
             👋 Who Am I?
           </h3>
           <p className="text-[#aaa] leading-relaxed mb-4 text-[0.95rem]">
@@ -42,7 +42,7 @@ export default function About() {
         <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
           hover:border-[#60a5fa]/40 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-200">
           <div className="absolute -inset-px bg-linear-to-r from-[#60a5fa]/20 to-[#a78bfa]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-4xl blur-sm pointer-events-none -z-10" />
-          <h3 className="text-xl font-semibold mb-4 text-white flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1">
+          <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#a78bfa]">
             💡 My Approach
           </h3>
           <p className="text-[#aaa] leading-relaxed text-[0.95rem] mb-6">
@@ -80,7 +80,7 @@ export default function About() {
         </span>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8 achievements-grid">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
         <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
           hover:border-[#a78bfa]/30  hover:-translate-y-1.5 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100">
           <h3 className="text-lg font-semibold mb-3 text-white tracking-wide group-hover:text-[#a78bfa] transition-colors duration-300">
@@ -118,21 +118,21 @@ export default function About() {
       
       
    
-      <div className="text-center my-6 flex flex-wrap justify-start sm:justify-center gap-3">
+      <div className="text-center my-6 flex flex-wrap justify-start sm:justify-center gap-3 ">
         {[
-          { label: 'English', flag: '🇬🇧' },
-          { label: 'Nepali', flag: '🇳🇵' },
-          { label: 'Hindi', flag: '🇮🇳' },
-          { label: 'Newari', flag: '🗣️' },
+          { label: 'English' },
+          { label: 'Nepali', },
+          { label: 'Hindi',  },
+          { label: 'Newari', },
          
         ].map((lang, idx) => (
           <span 
             key={idx}
             className="inline-flex items-center gap-2  bg-[#1c1c1e]/60 border border-white/5 px-5 py-2.5 rounded-[40px] text-[0.9rem] tracking-wide text-neutral-300 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]
-              transition-all duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:bg-[#a78bfa]/10 hover:border-[#a78bfa]/40 hover:-translate-y-1 hover:scale-105 hover:text-white cursor-default select-none shadow-sm"
+              transition-all duration-500 ease-[cubic-bezier(0.175,0.885,0.32,1.275)] hover:bg-[#a78bfa]/10 hover:border-[#a78bfa]/40 hover:-translate-y-1 hover:scale-105 hover:text-white cursor-default select-none shadow-sm "
           >
-            <span>{lang.flag}</span>
-            <span className="font-medium">{lang.label}</span>
+            
+            <span className="font-medium hover:text-[#a78bfa]">{lang.label}</span>
           </span>
         ))}
       </div>
