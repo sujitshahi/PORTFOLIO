@@ -127,7 +127,7 @@ export default function Page() {
               </h3>
               
               <div className="flex flex-wrap gap-2.5">
-                <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">React.js</span>
+                {/* <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">React.js</span> */}
                 <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">Next.js</span>
                 <span className="bg-[#a78bfa]/10 border border-[#a78bfa]/30 px-4 py-2 rounded-full text-sm text-neutral-200 transition-all duration-300 hover:bg-[#a78bfa]/30 hover:-translate-y-1 hover:shadow-[0_4px_12px_rgba(167,139,250,0.2)] hover:text-[#a78bfa]">Tailwind CSS</span>
               </div>
