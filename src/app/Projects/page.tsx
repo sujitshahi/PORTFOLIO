@@ -6,7 +6,7 @@ const projectsData = [
     category: "INTERNSHIP PROJECT | 2025",
     title: "🏫 Kider - Kindergarten Website Clone",
     desc: "A high-fidelity, responsive frontend clone built with a clean code architecture. Features optimized image handling and lazy loading structures, resulting in a 30% page speed performance boost.",
-    techStack: ["Next.js", "React", "Tailwind CSS", "Optimization"],
+    techStack: ["Next.js", "Tailwind CSS", "Optimization"],
     link: "https://github.com/sujitshahi/INTERN-PROJECT",
     linkText: "View on GitHub →"
   },
@@ -15,7 +15,7 @@ const projectsData = [
     category: "MAJOR PROJECT | 2025",
     title: "🚗 Gantabya-Mobility - Transit Platform",
     desc: "A modern, high-performance transit and mobility web platform featuring a sleek, mobile-first user interface with modular design, optimized asset delivery.",
-    techStack: ["Next.js", "React", "Tailwind CSS", "Component Libraries"],
+    techStack: ["Next.js", "Tailwind CSS", "Component Libraries"],
     link: "https://github.com/sujitshahi/gantabya-mobility",
     linkText: "View on GitHub →",
     liveLink: "https://gantabya-mobility-sujitshahi.vercel.app/",
