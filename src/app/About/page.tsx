@@ -82,22 +82,22 @@ export default function About() {
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
         <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
-          hover:border-[#a78bfa]/30  hover:-translate-y-1.5 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100">
-          <h3 className="text-lg font-semibold mb-3 text-white tracking-wide group-hover:text-[#a78bfa] transition-colors duration-300">
+          hover:border-[#a78bfa]/40 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100">
+          <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#a78bfa]">
             🏆 Performance Optimization
           </h3>
           <p className="text-[#aaa] text-[0.9rem] leading-relaxed">30% runtime delivery speed improvement on production builds.</p>
         </div>
         <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
-          hover:border-[#a78bfa]/30 hover:-translate-y-1.5 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-200">
-          <h3 className="text-lg font-semibold mb-3 text-white tracking-wide group-hover:text-[#a78bfa] transition-colors duration-300">
+          hover:border-[#a78bfa]/40 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100">
+          <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#a78bfa]">
             🎓 Industry Training Drive
           </h3>
           <p className="text-[#aaa] text-[0.9rem] leading-relaxed">Advanced Stack Certification | MindRisers Institute.</p>
         </div>
-        <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5  rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
-          hover:border-[#a78bfa]/30 hover:-translate-y-1.5 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-300">
-          <h3 className="text-lg font-semibold mb-2 text-white tracking-wide group-hover:text-[#a78bfa] transition-colors duration-300">
+        <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
+          hover:border-[#a78bfa]/40 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100">
+          <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#a78bfa]">
             📜 Full-Stack Certification
           </h3>
           <p className="text-[#aaa] text-[0.9rem] leading-relaxed mb-4">Core validation across systems design & layout engineering blueprints.</p>
