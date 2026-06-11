@@ -1,3 +1,5 @@
+
+
 const projectsData = [
   {
     id: 1,
@@ -37,15 +39,16 @@ export default function Projects() {
         {projectsData.map((project) => (
           <div 
             key={project.id} 
-            className="project-card reveal-card bg-neutral-900/60 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.2,0.9,0.4,1.2)] hover:-translate-y-1.5 hover:scale-[1.01] hover:border-purple-500/30 hover:bg-neutral-800/80 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)]"
-          >
+            className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
+          hover:border-[#a78bfa]/40 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100">
+          
       
             <div className="project-category text-xs text-purple-400 mb-2 tracking-widest font-medium uppercase">
               {project.category}
             </div>
             
      
-            <h3 className="text-2xl font-semibold mb-3 text-white">
+            <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#a78bfa]">
               {project.title}
             </h3>
       
