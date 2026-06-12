@@ -12,7 +12,7 @@ const projectsData = [
   },
   {
     id: 2,
-    category: "MAJOR PROJECT | 2025",
+    category: "PROJECT | 2026",
     title: "🚗 Gantabya-Mobility - Transit Platform",
     desc: "A modern, high-performance transit and mobility web platform featuring a sleek, mobile-first user interface with modular design, optimized asset delivery.",
     techStack: ["Next.js", "Tailwind CSS", "Component Libraries"],
@@ -20,7 +20,19 @@ const projectsData = [
     linkText: "View on GitHub →",
     liveLink: "https://gantabya-mobility-sujitshahi.vercel.app/",
     liveLinkText: "Live Demo ⚡"
-  }
+  },
+  {
+    id: 3,
+    category: "PROJECT | 2026",
+    title: "Digital Palika",
+    desc: "Commimg soon",
+    techStack: ["React", "Tailwind CSS", "Component Libraries"],
+    // link: "",
+    // linkText: "View on GitHub →",
+    // liveLink: "https://gantabya-mobility-sujitshahi.vercel.app/",
+    // liveLinkText: "Live Demo ⚡"
+  },
+  
 ];
 
 export default function Projects() {
