@@ -4,7 +4,7 @@ const projectsData = [
   {
     id: 1,
     category: "INTERNSHIP PROJECT | 2025",
-    title: "🏫 Kider - Kindergarten Website Clone",
+    title: "🏫 Kider - Kindergarden Website Reconfiguration",
     desc: "A high-fidelity, responsive frontend clone built with a clean code architecture. Features optimized image handling and lazy loading structures, resulting in a 30% page speed performance boost.",
     techStack: ["Next.js", "Tailwind CSS", "Optimization"],
     link: "https://github.com/sujitshahi/INTERN-PROJECT",
