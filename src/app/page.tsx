@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-[#ededed] font-sans overflow-x-hidden selection:bg-[#a78bfa]/30">
+    <main className="min-h-screen bg-[#0a0a0a] text-[#ededed] font-sans overflow-x-hidden selection:bg-[#a78bfa]/30 bg-linear-r transiton-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
       <div className="max-w-325 mx-auto px-4 sm:px-8 pt-8 pb-16 relative z-10">
         
      
