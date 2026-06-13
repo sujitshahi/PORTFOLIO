@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-[#ededed] font-sans overflow-x-hidden selection:bg-[#a78bfa]/30 bg-linear-r transiton-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
+    <main className="min-h-screen bg-[#0a0a0a] text-white font-sans overflow-x-hidden selection:bg-[#a78bfa]/30 bg-linear-r transiton-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)]">
       <div className="max-w-325 mx-auto px-4 sm:px-8 pt-8 pb-16 relative z-10">
         
      
@@ -16,7 +16,7 @@ export default function Page() {
               ✦ OPEN FOR OPPORTUNITIES
             </div>
             
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none bg-linear-to-r from-white via-[#a78bfa] to-[#60a5fa] bg-clip-text text-transparent mb-4 bg-size-[200%_100%] hover:bg-size-[200%_100%] hover:bg-right transition-all duration-700 ease-in-out">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold mb-4 bg-linear-to-r from-[#a78bfa] via-[#60a5fa] to-[#c084fc] inline-block bg-clip-text text-transparent hover:scale-105 duration-300 ease-in-out">
               Sujit Shahi
             </h1>
             

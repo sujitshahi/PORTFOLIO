@@ -56,23 +56,23 @@ export default function ContactPage() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     alert("Thank you! I'll get back to you soon.");
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   return (
-    <div id="contact-page" className="w-full min-h-screen text-gray-200 py-8 px-4 md:px-8">
-      {/* Section Title */}
+    <div id="contact-page" className="w-full min-h-screen text-gray-200 py-8 px-4 md:px-8 bg-[#0a0a0a]">
+
       <div className="text-4xl md:text-5xl font-bold tracking-tight mb-8 text-left border-b border-zinc-800 pb-4">
         Get In <span className="bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">Touch</span>
       </div>
 
-      {/* Contact Grid Layout Container */}
+  
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
         
-        {/* Left Side: Contact Info Block */}
+   
         <div className="bg-zinc-900/60 backdrop-blur-xl border border-white/10 rounded-4xl p-8 transition-all duration-300 hover:border-violet-500/40">
           <h3 className="text-3xl font-semibold mb-6 text-violet-400">Let's Connect</h3>
           
@@ -107,10 +107,10 @@ export default function ContactPage() {
         </div>
 
 
-        {/* Right Side: Message Input Form Container */}
+  
 
         <div className="bg-zinc-900/60 backdrop-blur-xl border border-white/10 rounded-4xl p-8 transition-all duration-300 hover:border-violet-500/40">
-          <h3 className="text-2xl font-semibold mb-4 text-white">Send a Message</h3>
+          <h3 className="text-2xl font-semibold mb-4 text-violet-400">Send a Message</h3>
           
           <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             <input

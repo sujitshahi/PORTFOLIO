@@ -3,7 +3,7 @@
 
 export default function About() {
   return (
-    <div id="about-page" className="max-w-325 mx-auto px-8 py-8 md:py-16 text-[#ededed] font-sans overflow-hidden">
+    <div id="about-page" className="max-w-325 mx-auto px-8 py-8 md:py-16 text-[#ededed] font-sans overflow-hidden bg-[#0a0a0a]">
       
 
 

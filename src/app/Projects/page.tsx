@@ -25,7 +25,7 @@ const projectsData = [
     id: 3,
     category: "PROJECT | 2026",
     title: "Digital Palika",
-    desc: "Commimg soon",
+    desc: "Comming soon",
     techStack: ["React", "Tailwind CSS", "Component Libraries"],
     // link: "",
     // linkText: "View on GitHub →",
