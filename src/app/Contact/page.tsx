@@ -63,11 +63,11 @@ export default function ContactPage() {
   };
 
   return (
-    <div id="contact-page" className="w-full min-h-screen text-gray-200 py-8 px-4 md:px-8 bg-[#0a0a0a]">
+    <div id="contact-page" className="w-full min-h-screen text-gray-200 py-8 px-4 md:px-8 bg-[#0a0a0a] ">
 
-      <div className="text-4xl md:text-5xl font-bold tracking-tight mb-8 text-left border-b border-zinc-800 pb-4">
-        Get In <span className="bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">Touch</span>
-      </div>
+    <div className="text-4xl md:text-5xl font-bold tracking-tight mb-8 text-left border-b border-zinc-800 pb-4 bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
+  Get In <span className="bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">Touch</span>
+</div>
 
   
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
