@@ -21,18 +21,7 @@ const projectsData = [
     liveLink: "https://gantabya-mobility-sujitshahi.vercel.app/",
     liveLinkText: "Live Demo ⚡"
   },
-  {
-    id: 3,
-    category: "PROJECT | 2026",
-    title: "Digital Palika",
-    desc: "Comming soon",
-    techStack: ["React", "Tailwind CSS", "Component Libraries"],
-    // link: "",
-    // linkText: "View on GitHub →",
-    // liveLink: "https://gantabya-mobility-sujitshahi.vercel.app/",
-    // liveLinkText: "Live Demo ⚡"
-  },
-  
+ 
 ];
 
 export default function Projects() {
