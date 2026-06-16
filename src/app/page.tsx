@@ -16,7 +16,7 @@ export default function Page() {
               ✦ OPEN FOR OPPORTUNITIES
             </div>
             
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold mb-4 bg-linear-to-r  from-violet-400 to-blue-400 inline-block bg-clip-text text-transparent hover:scale-105 duration-300 ease-in-out">
+            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-4 bg-linear-to-r  from-violet-400 to-blue-400 inline-block bg-clip-text text-transparent hover:scale-105 duration-300 ease-in-out">
               Sujit Shahi
             </h1>
             
