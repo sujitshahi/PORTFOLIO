@@ -4,8 +4,6 @@
 export default function About() {
   return (
     <div id="about-page" className="max-w-325 mx-auto px-8 py-8 md:py-16 text-[#ededed] font-sans overflow-hidden bg-[#0a0a0a]">
-      
-
 
       <div className="text-[2rem] md:text-[2.8rem] font-bold mt-8 mb-12 flex items-center gap-3 relative w-fit
         after:absolute after:-bottom-2 after:left-0 
@@ -13,13 +11,13 @@ export default function About() {
         after:w-full">
         
         {/* Wrapped "About" in a span with the identical gradient config */}
-        <span className="bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
+        <h1 className="bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
           About
-        </span>
+        </h1>
 
-        <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] text-white backdrop-blur-xs font-normal border border-white/5 shadow-inner">
+        <h1 className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] text-white backdrop-blur-xs font-normal border border-white/5 shadow-inner">
           Myself
-        </span>
+        </h1>
       </div>
       
    
@@ -27,7 +25,6 @@ export default function About() {
       
         <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
           hover:border-[#a78bfa]/40 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100">
-          <div className="absolute -inset-px bg-linear-to-r from-[#a78bfa]/20 to-[#60a5fa]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-4xl blur-sm pointer-events-none -z-10" />
           <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#a78bfa]">
             👋 Who Am I?
           </h3>
@@ -40,8 +37,7 @@ export default function About() {
         </div>
         
         <div className="bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl p-8 relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
-          hover:border-[#60a5fa]/40 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-200">
-          <div className="absolute -inset-px bg-linear-to-r from-[#60a5fa]/20 to-[#a78bfa]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 rounded-4xl blur-sm pointer-events-none -z-10" />
+          hover:border-[#a78bfa]/40 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100">
           <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#a78bfa]">
             💡 My Approach
           </h3>
@@ -53,7 +49,7 @@ export default function About() {
               <span 
                 key={index} 
                 className="inline-block bg-[#a78bfa]/10 border border-[#a78bfa]/20 px-4 py-1.5 rounded-[40px] text-[0.85rem] font-medium tracking-wide text-[#cbd5e1]
-                  transition-all duration-300 ease-out hover:bg-linear-to-r hover:from-[#a78bfa] hover:to-[#60a5fa] hover:text-black hover:border-transparent hover:-translate-y-1 hover:shadow-lg hover:shadow-[#a78bfa]/20 cursor-default"
+                  transition-all duration-300 ease-out hover:bg-linear-to-r hover:border-transparent hover:-translate-y-1 hover:shadow-lg hover:shadow-[#a78bfa]/20 cursor-default hover:text-[#a78bfa]"
               >
                 {skill}
               </span>
@@ -71,13 +67,13 @@ export default function About() {
         animate-title after:w-full after:transition-[width] after:duration-1000 after:ease-out after:delay-300">
         
    
-        <span className="bg-linear-to-r from-[#a78bfa] to-[#60a5fa] bg-clip-text text-transparent">
+        <h1 className="bg-linear-to-r from-[#a78bfa] to-[#60a5fa] bg-clip-text text-transparent">
           Achievements
-        </span>
+        </h1>
 
-        <span className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] text-white backdrop-blur-xs font-normal border border-white/5 shadow-inner">
+        <h1 className="bg-white/10 px-4 py-1 rounded-[60px] text-[0.9rem] text-white backdrop-blur-xs font-normal border border-white/5 shadow-inner">
           & Awards
-        </span>
+        </h1>
       </div>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-8">
@@ -101,7 +97,7 @@ export default function About() {
             📜 Full-Stack Certification
           </h3>
           <p className="text-[#aaa] text-[0.9rem] leading-relaxed mb-4">Core validation across systems design & layout engineering blueprints.</p>
-          <a href="https://www.mindrisers.com.np/certificate/validate/MR-82006-WD" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-[#a78bfa] hover:text-white transition-all duration-300 font-medium text-sm group/link">
+          <a href="https://www.mindrisers.com.np/certificate/validate/MR-82006-WD" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 text-white hover:text-[#a78bfa] transition-all duration-300 font-medium text-sm group/link">
             Verify Credentials <span className="transform transition-transform duration-300 group-hover/link:translate-x-1">→</span>
           </a>
         </div>

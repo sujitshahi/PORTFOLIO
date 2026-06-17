@@ -44,9 +44,9 @@ export default function Projects() {
           hover:border-[#a78bfa]/40 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100">
           
       
-            <div className="project-category text-xs text-purple-400 mb-2 tracking-widest font-medium uppercase">
+            <h1 className="project-category text-xs text-purple-400 mb-2 tracking-widest font-medium uppercase">
               {project.category}
-            </div>
+            </h1>
             
      
             <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#a78bfa]">
@@ -74,7 +74,7 @@ export default function Projects() {
                 href={project.link} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="project-link text-purple-400 no-underline font-medium inline-flex items-center gap-1.5 transition-all duration-300 hover:gap-2.5 hover:text-purple-300"
+                className="project-link text-white no-underline font-medium inline-flex items-center gap-1.5 transition-all duration-300 hover:gap-2.5 hover:text-[#a78bfa]"
               >
                 {project.linkText}
               </a>
@@ -85,7 +85,7 @@ export default function Projects() {
                   href={project.liveLink} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="project-live-link text-emerald-400 no-underline font-medium inline-flex items-center gap-1.5 transition-all duration-300 hover:gap-2.5 hover:text-emerald-300 drop-shadow-[0_0_0px_rgba(110,231,183,0)] hover:drop-shadow-[0_4px_10px_rgba(110,231,183,0.2)]"
+                  className="project-live-link text-emerald-500 no-underline font-medium inline-flex items-center gap-1.5 transition-all duration-300 hover:gap-2.5 hover:text-emerald-300 drop-shadow-[0_0_0px_rgba(110,231,183,0)] hover:drop-shadow-[0_4px_10px_rgba(110,231,183,0.2)]"
                 >
                   {project.liveLinkText}
                 </a>

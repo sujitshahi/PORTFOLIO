@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-// 1. Updated NavItem props to accept an optional React node for the icon
+
 interface NavItemProps {
   href: string;
   children: React.ReactNode;
@@ -38,9 +38,9 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 flex flex-col md:flex-row md:items-center md:justify-between px-10 py-4 bg-[#0a0a0a] backdrop-blur-md border-b border-white/10">
       
       <div className="flex items-center justify-between w-full md:w-auto">
-        <div className="text-xl font-bold tracking-wide bg-clip-text text-transparent bg-linear-to-r from-violet-400 to-blue-400">
+        <h1 className="text-4xl font-bold tracking-wide bg-clip-text text-transparent bg-linear-to-r from-violet-400 to-blue-400">
           SUJIT SHAHI
-        </div>
+        </h1>
 
 
         <button 
