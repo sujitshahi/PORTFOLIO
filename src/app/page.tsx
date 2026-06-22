@@ -38,7 +38,7 @@ export default function Page() {
             <div className="relative group p-1.5 bg-linear-to-br from-[#a78bfa] via-[#60a5fa] to-[#c084fc] rounded-full transition-all duration-500 hover:scale-105">
               <Image 
                 className="w-56 h-56 sm:w-72 sm:h-72 rounded-full object-cover border-4 border-[#0a0a0a]"
-                src="/sujit.jpg" 
+                src="/photo3.jpg" 
                 alt="Sujit Shahi"
                 width={280}
                 height={280}
