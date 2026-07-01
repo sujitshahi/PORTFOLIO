@@ -8,7 +8,9 @@ const projectsData = [
     desc: "A high-fidelity, responsive frontend clone built with a clean code architecture. Features optimized image handling and lazy loading structures, resulting in a 30% page speed performance boost.",
     techStack: ["Next.js", "Tailwind CSS", "Optimization"],
     link: "https://github.com/sujitshahi/INTERN-PROJECT",
-    linkText: "View on GitHub →"
+    linkText: "View on GitHub →",
+    liveLink: "https://kider-garden.vercel.app",
+    liveLinkText: "Live Demo ⚡"
   },
   {
     id: 2,
@@ -18,7 +20,7 @@ const projectsData = [
     techStack: ["Next.js", "Tailwind CSS", "Component Libraries"],
     link: "https://github.com/sujitshahi/gantabya-mobility",
     linkText: "View on GitHub →",
-    liveLink: "https://gantabya-mobility-sujitshahi.vercel.app/",
+    liveLink: "https://gantabya-mobility-sujitshahi.vercel.app",
     liveLinkText: "Live Demo ⚡"
   },
  
