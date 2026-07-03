@@ -32,7 +32,7 @@ export default function RootLayout({
       suppressHydrationWarning={true}
       >
   
-        <Navbar />
+        <Navbar />   
         {children} 
         </body>
     </html>
