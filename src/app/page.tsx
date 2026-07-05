@@ -11,7 +11,7 @@ export default function page() {
             <div className="bg-white/5 backdrop-blur-md px-4 py-1 rounded-full text-xs font-semibold tracking-wide w-fit border border-white/10 mb-4 animate-[pulse_2s_infinite]">
               ✦ OPEN FOR OPPORTUNITIES
             </div>
-            
+             
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-4 bg-linear-to-r  from-violet-400 to-blue-400 inline-block bg-clip-text text-transparent hover:scale-105 duration-300 ease-in-out">
               Sujit Shahi
             </h1>
