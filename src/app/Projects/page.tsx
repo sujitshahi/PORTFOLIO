@@ -3,7 +3,7 @@ const projectsData = [
   {
     id: 1,
     category: "INTERNSHIP PROJECT | 2025",
-    title: "🏫 Kider - Kindergarden Website Reconfiguration",
+    title: "Kider - Kindergarden Website Reconfiguration",
     desc: "A high-fidelity, responsive frontend clone built with a clean code architecture. Features optimized image handling and lazy loading structures, resulting in a 30% page speed performance boost.",
     techStack: ["Next.js", "Tailwind CSS", "Optimization"],
     link: "https://github.com/sujitshahi/INTERN-PROJECT",
@@ -15,7 +15,7 @@ const projectsData = [
   {
     id: 2,
     category: "PROJECT | 2026",
-    title: "🚗 Gantabya-Mobility - Transit Platform",
+    title: "Gantabya-Mobility - Transit Platform",
     desc: "A modern, high-performance transit and mobility web platform featuring a sleek, mobile-first user interface with modular design, optimized asset delivery.",
     techStack: ["Next.js", "Tailwind CSS", "Component Libraries"],
     link: "https://github.com/sujitshahi/gantabya-mobility",
