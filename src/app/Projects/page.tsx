@@ -14,6 +14,18 @@ const projectsData = [
   },
   {
     id: 2,
+    category: "PROJECT FOR CERTIFICATE | 2025",
+    title: "E-commerce Website - E-Market",
+    desc: "A modern, high-performance transit and mobility web platform featuring a sleek, mobile-first user interface with modular design, optimized asset delivery.",
+    techStack: ["Next.js", "Tailwind CSS", "Component Libraries"],
+    link: "https://github.com/sujitshahi/E-market",
+    linkText: "View on GitHub →",
+    liveLink: "https://e-market-123.vercel.app/",
+    liveLinkText: "Live Demo ⚡",
+    thumbnail: "/e-market.png"
+  },
+  {
+    id: 3,
     category: "PROJECT | 2026",
     title: "Gantabya-Mobility - Transit Platform",
     desc: "A modern, high-performance transit and mobility web platform featuring a sleek, mobile-first user interface with modular design, optimized asset delivery.",
@@ -24,6 +36,7 @@ const projectsData = [
     liveLinkText: "Live Demo ⚡",
     thumbnail: "/gantabya.png"
   },
+  
 ];
 
 export default function Projects() {
