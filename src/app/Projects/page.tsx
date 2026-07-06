@@ -34,7 +34,7 @@ export default function Projects() {
         My Projects
       </div>
   
-      {/* Changed from a strict grid to a column layout with gaps */}
+      
       <div className="projects-grid flex flex-col gap-12 my-8">
         
         {projectsData.map((project, index) => (
@@ -43,10 +43,9 @@ export default function Projects() {
             className={`bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
               hover:border-[#a78bfa]/40 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100
               flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`} 
-              /* 👆 Magic happens here: Even indexes get normal row order (Image Left), Odd indexes get reversed (Image Right) */
+              
           >
           
-            {/* 📸 Thumbnail Container */}
             {project.thumbnail && (
               <div className="w-full md:w-1/2 h-64 md:h-auto min-h-75 overflow-hidden bg-white/5 relative">
                 <img 
@@ -58,7 +57,7 @@ export default function Projects() {
               </div>
             )}
 
-            {/* Content Container */}
+         
             <div className="p-8 md:p-12 w-full md:w-1/2 flex flex-col justify-center">
               <h1 className="project-category text-xs text-purple-400 mb-2 tracking-widest font-medium uppercase">
                 {project.category}
