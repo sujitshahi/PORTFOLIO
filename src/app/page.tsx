@@ -6,44 +6,44 @@ export default function page() {
   return (
     <main className=" max-w-325 px-8 py-8 md:py-16 text-[#ededed] font-sans overflow-hidden bg-[#0a0a0a]">
 
-        <section className="flex flex-col-reverse md:flex-row items-center gap-12 mb-12">
-          <div className="flex-1 animate-[fadeInLeft_0.8s_ease-out_forwards]">
-            <div className="bg-white/5 backdrop-blur-md px-4 py-1 rounded-full text-xs font-semibold tracking-wide w-fit border border-white/10 mb-4 animate-[pulse_2s_infinite]">
-              ✦ OPEN FOR OPPORTUNITIES
-            </div>
-             
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-4 bg-linear-to-r  from-violet-400 to-blue-400 inline-block bg-clip-text text-transparent hover:scale-105 duration-300 ease-in-out">
-              Sujit Shahi
-            </h1>
-            
-            <TypedText />
-            
-            <p className="text-lg text-neutral-400 max-w-125 mb-8 leading-relaxed">
-              Front-End Developer with a full-stack foundation, specializing in responsive interfaces using HTML, CSS, and React. Passionate about crafting seamless user experiences.
-            </p>
-            
-            <button className=" cursor-pointer transition-all duration-300 ease-in-out  bg-white text-black px-8 py-3.5 rounded-full hover:shadow-[0_4px_25px_rgba(167,139,250,0.4)] hover:scale-105">
-              View my work →
-            </button>
+      <section className="flex flex-col-reverse md:flex-row items-center gap-12 mb-12">
+        <div className="flex-1 animate-[fadeInLeft_0.8s_ease-out_forwards]">
+          <div className="bg-white/5 backdrop-blur-md px-4 py-1 rounded-full text-xs font-semibold tracking-wide w-fit border border-white/10 mb-4 animate-[pulse_2s_infinite]">
+            ✦ OPEN FOR OPPORTUNITIES
           </div>
+            
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold mb-4 bg-linear-to-r  from-violet-400 to-blue-400 inline-block bg-clip-text text-transparent hover:scale-105 duration-300 ease-in-out">
+            Sujit Shahi
+          </h1>
+          
+          <TypedText />
+          
+          <p className="text-lg text-neutral-400 max-w-125 mb-8 leading-relaxed">
+            Front-End Developer with a full-stack foundation, specializing in responsive interfaces using HTML, CSS, and React. Passionate about crafting seamless user experiences.
+          </p>
+          
+          <button className=" cursor-pointer transition-all duration-300 ease-in-out  bg-white text-black px-8 py-3.5 rounded-full hover:shadow-[0_4px_25px_rgba(167,139,250,0.4)] hover:scale-105">
+            View my work →
+          </button>
+        </div>
 
-     
-          <div className="flex-[0.8] flex justify-center relative">
-            <div className="absolute w-[320px] h-80 bg-linear-to-tr from-[#a78bfa]/20 to-transparent rounded-full blur-2xl -z-10" />
-            
-            <div className="relative group p-1.5 bg-linear-to-br from-[#a78bfa] via-[#60a5fa] to-[#c084fc] rounded-full transition-all duration-500 hover:scale-105">
-              <Image 
-                className="w-56 h-56 sm:w-72 sm:h-72 rounded-full object-cover border-4 border-[#0a0a0a]"
-                src="/photo3.jpg" 
-                alt="Sujit Shahi"
-                width={280}
-                height={280}
-                priority
-              />
-              <div className="absolute bottom-5 right-7 w-4 h-4 bg-emerald-500 rounded-full border-2 border-[#0a0a0a]" />
-            </div>
+    
+        <div className="flex-[0.8] flex justify-center relative">
+          <div className="absolute w-[320px] h-80 bg-linear-to-tr from-[#a78bfa]/20 to-transparent rounded-full blur-2xl -z-10" />
+          
+          <div className="relative group p-1.5 bg-linear-to-br from-[#a78bfa] via-[#60a5fa] to-[#c084fc] rounded-full transition-all duration-500 hover:scale-105">
+            <Image 
+              className="w-56 h-56 sm:w-72 sm:h-72 rounded-full object-cover border-4 border-[#0a0a0a]"
+              src="/photo3.jpg" 
+              alt="Sujit Shahi"
+              width={280}
+              height={280}
+              priority
+            />
+            <div className="absolute bottom-5 right-7 w-4 h-4 bg-emerald-500 rounded-full border-2 border-[#0a0a0a]" />
           </div>
-        </section>
+        </div>
+      </section>
 
 
 
@@ -53,7 +53,7 @@ export default function page() {
         after:h-0.75 after:bg-linear-to-r after:from-[#a78bfa] after:to-[#60a5fa] 
         after:w-full">
         
-        {/* Wrapped "About" in a span with the identical gradient config */}
+        
         <h1 className="bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
           About
         </h1>

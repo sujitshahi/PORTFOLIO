@@ -16,7 +16,7 @@ const projectsData = [
     id: 2,
     category: "PROJECT FOR CERTIFICATE | 2025",
     title: "E-commerce Website - E-Market",
-    desc: "A modern, high-performance transit and mobility web platform featuring a sleek, mobile-first user interface with modular design, optimized asset delivery.",
+    desc: "A frontend storefront that consumes product data via API to simulate a retail environment. Implemented client-side filtering and sorting algorithms alongside local state management for the shopping cart and checkout simulation.",
     techStack: ["Next.js", "Tailwind CSS", "Component Libraries"],
     link: "https://github.com/sujitshahi/E-market",
     linkText: "View on GitHub →",
@@ -41,9 +41,9 @@ const projectsData = [
 
 export default function Projects() {
   return (
-    <div id="projects-page" className="block min-h-screen bg-[#0a0a0a] text-[#ededed] p-8 font-sans anticipate-fade-in">
+    <div id="projects-page" className="block min-h-screen bg-[#0a0a0a] text-[#ededed] p-8">
       
-      <div className="reveal-title text-5xl my-8 tracking-tight flex items-center gap-3 relative w-fit font-medium bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent">
+      <div className="text-5xl h-20 my-8 w-fit font-medium bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent ">
         My Projects
       </div>
   
