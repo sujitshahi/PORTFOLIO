@@ -36,6 +36,7 @@ const projectsData = [
     liveLinkText: "Live Demo ⚡",
     thumbnail: "/gantabya.png"
   },
+
   
 ];
 
