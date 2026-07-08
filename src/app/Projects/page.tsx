@@ -48,7 +48,6 @@ export default function Projects() {
         My Projects
       </div>
   
-      
       <div className="projects-grid flex flex-col gap-12 my-8">
         
         {projectsData.map((project, index) => (
