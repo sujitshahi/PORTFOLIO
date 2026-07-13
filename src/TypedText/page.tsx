@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-const roles = ['Front-End Developer With Full-Stack Foundation.'];
+const roles = ['Front-End Developer With Full-Stack Foundation.', 'React Developer.', 'Next.js Developer.', 'TypeScript Enthusiast.'];
 
 export default function TypedText() {
   const [roleIndex, setRoleIndex] = useState(0);
