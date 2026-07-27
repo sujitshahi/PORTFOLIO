@@ -12,18 +12,18 @@ const projectsData = [
     liveLinkText: "Live Demo ⚡",
     thumbnail: "/kider-garden.png"
   },
-  // {
-  //   id: 2,
-  //   category: "PROJECT FOR CERTIFICATE | 2025",
-  //   title: "E-commerce Website - E-Market",
-  //   desc: "A frontend storefront that consumes product data via API to simulate a retail environment. Implemented client-side filtering and sorting algorithms alongside local state management for the shopping cart and checkout simulation.",
-  //   techStack: ["Next.js", "Tailwind CSS", "Component Libraries"],
-  //   link: "https://github.com/sujitshahi/E-market",
-  //   linkText: "View on GitHub →",
-  //   liveLink: "https://e-market-123.vercel.app/",
-  //   liveLinkText: "Live Demo ⚡",
-  //   thumbnail: "/e-market.png"
-  // },
+  {
+    id: 2,
+    category: "PROJECT FOR CERTIFICATE | 2025",
+    title: "E-commerce Website - E-Market",
+    desc: "A frontend storefront that consumes product data via API to simulate a retail environment. Implemented client-side filtering and sorting algorithms alongside local state management for the shopping cart and checkout simulation.",
+    techStack: ["Next.js", "Tailwind CSS", "Component Libraries"],
+    link: "https://github.com/sujitshahi/E-market",
+    linkText: "View on GitHub →",
+    liveLink: "https://e-market-123.vercel.app/",
+    liveLinkText: "Live Demo ⚡",
+    thumbnail: "/e-market.png"
+  },
   {
     id: 3,
     category: "PROJECT | 2026",
