@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
     <div className="container">
@@ -16,14 +18,14 @@ export default function Hero() {
             specializing in responsive interfaces using HTML, CSS, and React.
           </p>
 
-          <button className="btn-modern">
+          <button type="button" className="btn-modern">
             View my work →
           </button>
         </div>
 
         <div className="profile-wrapper">
           <div className="profile-ring">
-            <img
+            <Image
               src="/profile.jpg"
               alt="Sujit Shahi"
               className="profile-pic"

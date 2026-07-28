@@ -43,7 +43,7 @@ export default function Navbar() {
         </h1>
 
 
-        <button 
+        <button type="button"  aria-label="Toggle Menu"
           onClick={() => setIsOpen(!isOpen)} 
           className="md:hidden text-white focus:outline-none cursor-pointer p-1"
         >

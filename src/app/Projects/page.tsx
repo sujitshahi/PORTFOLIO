@@ -1,3 +1,4 @@
+import Image from "next/image";
 
 const projectsData = [
   {
@@ -36,8 +37,6 @@ const projectsData = [
     liveLinkText: "Live Demo ⚡",
     thumbnail: "/gantabya.png"
   },
-
-  
 ];
 
 export default function Projects() {
@@ -53,30 +52,29 @@ export default function Projects() {
         {projectsData.map((project, index) => (
           <div 
             key={project.id} 
-            className={`bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl relative overflow-hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
+            className={`bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl relative overflow-hidden transition-colors  duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
               hover:border-[#a78bfa]/40 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100
               flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`} 
-              
           >
           
             {project.thumbnail && (
               <div className="w-full md:w-1/2 h-64 md:h-auto min-h-75 overflow-hidden bg-white/5 relative">
-                <img 
+                <Image
                   src={project.thumbnail} 
                   alt={project.title} 
-                  className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105 absolute inset-0"
-                  loading="lazy"
+                  className="object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             )}
 
-         
             <div className="p-8 md:p-12 w-full md:w-1/2 flex flex-col justify-center">
               <h1 className="project-category text-xs text-purple-400 mb-2 tracking-widest font-medium uppercase">
                 {project.category}
               </h1>
               
-              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 tracking-wide transition-transform duration-300 group-hover:translate-x-1 group-hover:text-[#a78bfa]">
+              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 tracking-wide transition-colors  duration-300 group-hover:translate-x-1 group-hover:text-[#a78bfa]">
                 {project.title}
               </h3>
         
@@ -85,9 +83,9 @@ export default function Projects() {
               </p>
              
               <div className="tech-stack flex flex-wrap gap-2 mb-6">
-                {project.techStack.map((tech, index) => (
+                {project.techStack.map((tech) => (
                   <span 
-                    key={index} 
+                    key={tech} 
                     className="tech bg-purple-500/10 border border-purple-500/20 px-3 py-1 rounded-full text-xs font-medium text-purple-400"
                   >
                     {tech}
@@ -100,7 +98,7 @@ export default function Projects() {
                   href={project.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="project-link text-white no-underline font-medium inline-flex items-center gap-1.5 transition-all duration-300 hover:gap-2.5 hover:text-[#a78bfa]"
+                  className="project-link text-white no-underline font-medium inline-flex items-center gap-1.5 transition-colors duration-300 hover:gap-2.5 hover:text-[#a78bfa]"
                 >
                   {project.linkText}
                 </a>
@@ -110,7 +108,7 @@ export default function Projects() {
                     href={project.liveLink} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="project-live-link text-emerald-500 no-underline font-medium inline-flex items-center gap-1.5 transition-all duration-300 hover:gap-2.5 hover:text-emerald-300 drop-shadow-[0_0_0px_rgba(110,231,183,0)] hover:drop-shadow-[0_4px_10px_rgba(110,231,183,0.2)]"
+                    className="project-live-link text-emerald-500 no-underline font-medium inline-flex items-center gap-1.5 transition-colors duration-300 hover:gap-2.5 hover:text-emerald-300 drop-shadow-[0_0_0px_rgba(110,231,183,0)] hover:drop-shadow-[0_4px_10px_rgba(110,231,183,0.2)]"
                   >
                     {project.liveLinkText}
                   </a>
