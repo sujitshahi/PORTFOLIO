@@ -4,14 +4,14 @@ const projectsData = [
   {
     id: 1,
     category: "INTERNSHIP PROJECT | 2025",
-    title: "Kider - Kindergarden Website Reconfiguration",
+    title: "Kider - Modern Kidergarden Website Redesign & Optimization",
     desc: "A high-fidelity, responsive frontend clone built with a clean code architecture. Features optimized image handling and lazy loading structures, resulting in a 30% page speed performance boost.",
     techStack: ["Next.js", "Tailwind CSS", "Optimization"],
     link: "https://github.com/sujitshahi/INTERN-PROJECT",
     linkText: "View on GitHub →",
     liveLink: "https://kider-garden.vercel.app",
     liveLinkText: "Live Demo ⚡",
-    thumbnail: "/kider-garden.png"
+    thumbnail: "/school.png"
   },
   {
     id: 2,
@@ -42,13 +42,10 @@ const projectsData = [
 export default function Projects() {
   return (
     <div id="projects-page" className="block min-h-screen bg-[#0a0a0a] text-[#ededed] p-8">
-      
       <div className="text-5xl h-20 my-8 w-fit font-medium bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent ">
         My Projects
       </div>
-  
       <div className="projects-grid flex flex-col gap-12 my-8">
-        
         {projectsData.map((project, index) => (
           <div 
             key={project.id} 
