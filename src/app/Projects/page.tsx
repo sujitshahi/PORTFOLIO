@@ -33,7 +33,7 @@ const projectsData = [
     techStack: ["Next.js", "Tailwind CSS", "Component Libraries"],
     link: "https://github.com/sujitshahi/gantabya-mobility",
     linkText: "View on GitHub →",
-    liveLink: "https://gantabya-mobility-sujitshahi.vercel.app",
+    liveLink: "https://gantabya-mobility-123.vercel.app",
     liveLinkText: "Live Demo ⚡",
     thumbnail: "/gantabya.png"
   },
