@@ -1,10 +1,13 @@
-import Image from "next/image";
+"use client";
+
+import Image from 'next/image';
+import { m } from 'framer-motion';
 
 const projectsData = [
   {
     id: 1,
     category: "INTERNSHIP PROJECT | 2025",
-    title: "Kider - Modern Kidergarden Website Redesign & Optimization",
+    title: "Kider - Modern Kindergarten Website Redesign & Optimization",
     desc: "A high-fidelity, responsive frontend clone built with a clean code architecture. Features optimized image handling and lazy loading structures, resulting in a 30% page speed performance boost.",
     techStack: ["Next.js", "Tailwind CSS", "Optimization"],
     link: "https://github.com/sujitshahi/INTERN-PROJECT",
@@ -39,84 +42,153 @@ const projectsData = [
   },
 ];
 
-export default function Projects() {
+export default function ProjectsSection() {
   return (
-    <div id="projects-page" className="block min-h-screen bg-[#0a0a0a] text-[#ededed] p-8">
-      <div className="text-5xl h-20 my-8 w-fit font-medium bg-linear-to-r from-violet-400 to-blue-400 bg-clip-text text-transparent ">
-        My Projects
+    <section id="projects" className="space-y-10 scroll-mt-24">
+      <div className="flex items-center gap-4">
+        <m.h2 
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          className="text-2xl sm:text-3xl font-bold tracking-tight text-white"
+        >
+          Featured Projects
+        </m.h2>
+        <m.div 
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="h-px flex-1 bg-liner-to-r from-indigo-500/80 via-purple-500/40 to-transparent origin-left" 
+        />
       </div>
-      <div className="projects-grid flex flex-col gap-12 my-8">
+
+      <div className="flex flex-col gap-14">
         {projectsData.map((project, index) => (
-          <div 
+          <m.div 
+            initial={{ opacity: 0, y: 80, scale: 0.96 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: index * 0.2, type: "spring", stiffness: 70 }}
+            whileHover={{ 
+              y: -8, 
+              transition: { duration: 0.3 } 
+            }}
             key={project.id} 
-            className={`bg-[#141414]/40 backdrop-blur-md border border-white/5 rounded-4xl relative overflow-hidden transition-colors  duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] 
-              hover:border-[#a78bfa]/40 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(167,139,250,0.15)] group reveal-card animate-in delay-100
-              flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`} 
+            className={`bg-zinc-900/70 backdrop-blur-2xl border border-white/10 rounded-3xl relative overflow-hidden shadow-2xl hover:border-indigo-500/70 hover:shadow-[0_30px_70px_rgba(99,102,241,0.35)] group flex flex-col ${
+              index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
+            }`}
           >
-          
+            <div className="absolute inset-0 bg-liner-to-r from-indigo-500/10 via-purple-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+
             {project.thumbnail && (
-              <div className="w-full md:w-1/2 h-64 md:h-auto min-h-75 overflow-hidden bg-white/5 relative">
-                <Image
-                  src={project.thumbnail} 
-                  alt={project.title} 
-                  className="object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
+              <div className="w-full md:w-1/2 min-h-70 md:min-h-87.5 overflow-hidden bg-zinc-950/80 relative border-b md:border-b-0 md:border-r border-white/5">
+                <m.div 
+                  whileHover={{ scale: 1.08 }}
+                  transition={{ duration: 0.7, ease: "easeOut" }}
+                  className="w-full h-full relative"
+                >
+                  <Image
+                    src={project.thumbnail} 
+                    alt={project.title} 
+                    className="object-cover object-top w-full h-full"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
+                </m.div>
+                <div className="absolute inset-0 bg-indigo-950/20 group-hover:bg-transparent transition-colors duration-500" />
               </div>
             )}
 
-            <div className="p-8 md:p-12 w-full md:w-1/2 flex flex-col justify-center">
-              <h1 className="project-category text-xs text-purple-400 mb-2 tracking-widest font-medium uppercase">
-                {project.category}
-              </h1>
-              
-              <h3 className="text-xl font-semibold mb-4 flex items-center gap-2 tracking-wide transition-colors  duration-300 group-hover:translate-x-1 group-hover:text-[#a78bfa]">
-                {project.title}
-              </h3>
-        
-              <p className="project-desc text-gray-400 text-base leading-relaxed mb-6">
-                {project.desc}
-              </p>
-             
-              <div className="tech-stack flex flex-wrap gap-2 mb-6">
-                {project.techStack.map((tech) => (
-                  <span 
-                    key={tech} 
-                    className="tech bg-purple-500/10 border border-purple-500/20 px-3 py-1 rounded-full text-xs font-medium text-purple-400"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-     
-              <div className="flex gap-6 items-center">
-                <a 
-                  href={project.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="project-link text-white no-underline font-medium inline-flex items-center gap-1.5 transition-colors duration-300 hover:gap-2.5 hover:text-[#a78bfa]"
+            <div className="p-8 md:p-12 w-full md:w-1/2 flex flex-col justify-between space-y-6 relative z-10">
+              <div className="space-y-4">
+                <m.span 
+                  initial={{ opacity: 0, x: -10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.2 + 0.2 }}
+                  className="inline-block text-xs font-mono text-indigo-400 tracking-wider uppercase bg-indigo-500/10 border border-indigo-500/30 px-3.5 py-1.5 rounded-lg shadow-[0_0_15px_rgba(99,102,241,0.2)]"
                 >
-                  {project.linkText}
-                </a>
+                  {project.category}
+                </m.span>
+                
+                <m.h3 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.2 + 0.3 }}
+                  className="text-xl sm:text-2xl font-bold tracking-tight text-white group-hover:text-indigo-300 transition-colors duration-300"
+                >
+                  {project.title}
+                </m.h3>
+         
+                <m.p 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.2 + 0.4 }}
+                  className="text-zinc-400 text-sm sm:text-base leading-relaxed"
+                >
+                  {project.desc}
+                </m.p>
+              </div>
+             
+              <div className="space-y-6">
+                <m.div 
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.2 + 0.5 }}
+                  className="flex flex-wrap gap-2"
+                >
+                  {project.techStack.map((tech) => (
+                    <m.span 
+                      key={tech} 
+                      whileHover={{ scale: 1.1, y: -2 }}
+                      transition={{ type: "spring", stiffness: 300 }}
+                      className="bg-zinc-800/90 border border-zinc-700/60 px-3 py-1 rounded-xl text-xs font-medium text-zinc-300 shadow-sm cursor-default"
+                    >
+                      {tech}
+                    </m.span>
+                  ))}
+                </m.div>
 
-                {project.liveLink && (
-                  <a 
-                    href={project.liveLink} 
+                <m.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: index * 0.2 + 0.6 }}
+                  className="flex flex-wrap items-center gap-6 pt-4 border-t border-white/10"
+                >
+                  <m.a 
+                    whileHover={{ x: 6, scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    href={project.link} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="project-live-link text-emerald-500 no-underline font-medium inline-flex items-center gap-1.5 transition-colors duration-300 hover:gap-2.5 hover:text-emerald-300 drop-shadow-[0_0_0px_rgba(110,231,183,0)] hover:drop-shadow-[0_4px_10px_rgba(110,231,183,0.2)]"
+                    className="text-white text-sm font-semibold inline-flex items-center gap-1.5 transition-colors hover:text-indigo-400"
                   >
-                    {project.liveLinkText}
-                  </a>
-                )}
+                    {project.linkText}
+                  </m.a>
+
+                  {project.liveLink && (
+                    <m.a 
+                      whileHover={{ x: 6, scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      href={project.liveLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-emerald-400 text-sm font-semibold inline-flex items-center gap-1.5 transition-colors hover:text-emerald-300"
+                    >
+                      {project.liveLinkText}
+                    </m.a>
+                  )}
+                </m.div>
               </div>
             </div>
-
-          </div>
+          </m.div>
         ))}
-        
       </div>
-    </div>
+    </section>
   );
 }
