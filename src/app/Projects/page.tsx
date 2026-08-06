@@ -24,7 +24,7 @@ const projectsData = [
     techStack: ["Next.js", "Tailwind CSS", "Component Libraries"],
     link: "https://github.com/sujitshahi/E-market",
     linkText: "View on GitHub →",
-    liveLink: "https://e-market-123.vercel.app/",
+    liveLink: "https://e-market123.vercel.app",
     liveLinkText: "Live Demo ⚡",
     thumbnail: "/e-market.png"
   },
