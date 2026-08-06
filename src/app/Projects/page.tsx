@@ -38,7 +38,7 @@ const projectsData = [
     linkText: "View on GitHub →",
     liveLink: "https://gantabya-mobility-123.vercel.app",
     liveLinkText: "Live Demo ⚡",
-    thumbnail: "/gantabya.png"
+    thumbnail: "/gantabya1.png"
   },
 ];
 
