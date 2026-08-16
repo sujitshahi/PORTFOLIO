@@ -130,7 +130,7 @@ function Hero() {
             margin: '0 0 24px',
           }}
         >
-          Alex Rivera
+          Sujit Shahi
           <br />
           <em style={{ fontStyle: 'italic', fontWeight: 300, color: '#7fffb2' }}>Frontend</em>{' '}
           Developer
@@ -144,8 +144,7 @@ function Hero() {
             margin: '0 0 48px',
           }}
         >
-          I build interfaces that feel fast and precise. Full-stack foundation — Node, Go,
-          PostgreSQL — so I own the whole feature, not just the pixels.
+          I build interfaces that feel fast and precise with Full-stack foundation.So, I own the whole feature, not just the pixels.
         </p>
         <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
           <a

@@ -26,7 +26,7 @@ export default function Nav() {
           letterSpacing: '0.02em',
         }}
       >
-        {'<alex.dev />'}
+        {'Sujit Shahi'}
       </span>
       <div style={{ display: 'flex', gap: '32px' }}>
         {['Work', 'Skills', 'Contact'].map((item) => (
