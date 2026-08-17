@@ -5,8 +5,8 @@ import { useState } from 'react'
 const projects = [
   {
     id: 1,
-    title: 'ShopStream',
-    tag: 'Full Stack',
+    title: 'Kider-garden',
+    tag: 'Front-End',
     year: '2024',
     description:
       'E-commerce platform with real-time inventory sync, Stripe checkout, and a React storefront backed by a Node.js/PostgreSQL API. Handles 10k+ SKUs with sub-50ms search.',
@@ -16,7 +16,7 @@ const projects = [
   },
   {
     id: 2,
-    title: 'Logboard',
+    title: 'Gantabya-Mobility',
     tag: 'Frontend',
     year: '2024',
     description:
@@ -27,7 +27,7 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Collab.md',
+    title: 'E-Market',
     tag: 'Full Stack',
     year: '2023',
     description:
