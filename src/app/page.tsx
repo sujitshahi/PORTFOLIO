@@ -1,6 +1,6 @@
 import Nav from './components/Nav'
 import Hero from './components/Hero/Hero'
-import ProjectsSection from './components/ProjectsSection'
+import ProjectsSection from './Projects/ProjectsSection'
 import SkillsSection from './components/Skills/SkillsSection'
 import AboutSection from './components/About/AboutSection'
 import ContactSection from './components/Contact/ContactSection'
