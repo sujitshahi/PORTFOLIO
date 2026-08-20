@@ -1,3 +1,4 @@
+
 'use client'
 
 import { useState } from 'react'
@@ -7,11 +8,14 @@ const projects = [
     id: 1,
     title: 'Kider-garden',
     tag: 'Front-End',
-    year: '2024',
+    year: '2025',
     description:
-      'E-commerce platform with real-time inventory sync, Stripe checkout, and a React storefront backed by a Node.js/PostgreSQL API. Handles 10k+ SKUs with sub-50ms search.',
-    stack: ['React', 'Node.js', 'PostgreSQL', 'Stripe', 'Redis'],
-    link: '#',
+      'A high-fidelity, responsive frontend clone built with a clean code architecture. Features optimized image handling and lazy loading structures, resulting in a 30% page speed performance boost.',
+    stack: ["Next.js", "Tailwind CSS", "Optimization"],
+    link: "https://github.com/sujitshahi/INTERN-PROJECT",
+    linkText: "View on GitHub",
+    liveLink: "https://kider-garden.vercel.app",
+    liveLinkText: "Live Demo",
     accent: '#7fffb2',
   },
   {
@@ -20,32 +24,13 @@ const projects = [
     tag: 'Frontend',
     year: '2024',
     description:
-      'Analytics dashboard for monitoring distributed microservice logs. Built with React Query for streaming updates, Recharts for time-series data, and a custom filtering DSL.',
-    stack: ['React', 'TypeScript', 'React Query', 'Recharts', 'WebSockets'],
-    link: '#',
+      'A modern, high-performance transit and mobility web platform featuring a sleek, mobile-first user interface with modular design, optimized asset delivery.',
+    stack: ["Next.js", "Tailwind CSS", "Component Libraries"],
+    link: 'https://github.com/sujitshahi/gantabya-mobility',
+    linkText: "View on GitHub",
+    liveLink: 'https://gantabya-mobility-123.vercel.app',
+    liveLinkText: "Live Demo",
     accent: '#7fb4ff',
-  },
-  {
-    id: 3,
-    title: 'E-Market',
-    tag: 'Full Stack',
-    year: '2023',
-    description:
-      'Multiplayer markdown editor with operational-transform conflict resolution, real-time cursors, and GitHub Gist export. Zero-dependency OT engine written from scratch.',
-    stack: ['Next.js', 'Go', 'WebSockets', 'SQLite', 'GitHub API'],
-    link: '#',
-    accent: '#ffb87f',
-  },
-  {
-    id: 4,
-    title: 'Fastrout',
-    tag: 'Library',
-    year: '2023',
-    description:
-      'Zero-dependency client-side router for React. Hash and history modes, nested routes, lazy loading, and typed params — 2.4 kB gzipped. 1.2k GitHub stars.',
-    stack: ['TypeScript', 'React', 'Vite', 'Vitest'],
-    link: '#',
-    accent: '#d87fff',
   },
 ]
 
@@ -142,7 +127,6 @@ export default function ProjectsSection() {
               flexDirection: 'column',
               gap: '20px',
               transition: 'background 0.2s',
-              cursor: 'pointer',
             }}
           >
             <div
@@ -226,20 +210,58 @@ export default function ProjectsSection() {
               ))}
             </div>
 
+            {/* Action Links Container */}
             <div
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '8px',
-                fontSize: '12px',
-                color: hoveredProject === project.id ? project.accent : '#2e2e44',
-                transition: 'color 0.2s',
-                letterSpacing: '0.04em',
-                textTransform: 'uppercase',
-                fontFamily: 'JetBrains Mono, monospace',
+                gap: '20px',
+                marginTop: '12px',
               }}
             >
-              View Case Study <span style={{ fontSize: '14px' }}>→</span>
+              {project.link && project.link !== '#' && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    fontSize: '12px',
+                    color: hoveredProject === project.id ? project.accent : '#6b6b80',
+                    transition: 'color 0.2s',
+                    letterSpacing: '0.04em',
+                    textTransform: 'uppercase',
+                    fontFamily: 'JetBrains Mono, monospace',
+                    textDecoration: 'none',
+                  }}
+                >
+                  {project.linkText} <span style={{ fontSize: '14px' }}>→</span>
+                </a>
+              )}
+
+              {project.liveLink && project.liveLink !== '#' && (
+                <a
+                  href={project.liveLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '6px',
+                    fontSize: '12px',
+                    color: hoveredProject === project.id ? project.accent : '#6b6b80',
+                    transition: 'color 0.2s',
+                    letterSpacing: '0.04em',
+                    textTransform: 'uppercase',
+                    fontFamily: 'JetBrains Mono, monospace',
+                    textDecoration: 'none',
+                  }}
+                >
+                  {project.liveLinkText} <span style={{ fontSize: '14px' }}>⚡</span>
+                </a>
+              )}
             </div>
           </div>
         ))}
