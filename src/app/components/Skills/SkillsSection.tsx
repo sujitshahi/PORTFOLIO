@@ -1,12 +1,9 @@
 
-
-import React from 'react'
-
 export default function SkillsSection() {
   const skills: Record<string, string[]> = {
-    Frontend: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion', 'WebSockets'],
-    Backend: ['Node.js', 'Go', 'PostgreSQL', 'Redis', 'REST', 'GraphQL'],
-    Tooling: ['Vite', 'Docker', 'GitHub Actions', 'Vercel', 'AWS S3', 'Vitest'],
+    Frontend: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+    // Backend: ['Node.js', 'Go', 'PostgreSQL', 'Redis', 'REST', 'GraphQL'],
+    Tooling: ['GitHub Actions', 'Vercel', 'Vitest'],
   }
 
   return (
