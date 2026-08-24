@@ -9,86 +9,32 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      style={{
-        padding: '120px 48px',
-        borderTop: '1px solid #1e1e30',
-        background: '#0a0a12',
-      }}
+      className="border-t border-[#1e1e30] bg-[#0a0a12] px-12 py-30"
     >
-      <div style={{ marginBottom: '64px' }}>
-        <div
-          style={{
-            fontFamily: 'JetBrains Mono, monospace',
-            fontSize: '11px',
-            color: '#7fffb2',
-            letterSpacing: '0.12em',
-            textTransform: 'uppercase',
-            marginBottom: '12px',
-          }}
-        >
+      <div className="mb-16">
+        <div className="mb-3 font-mono text-[11px] uppercase tracking-[0.12em] text-[#7fffb2]">
           Expertise
         </div>
-        <h2
-          style={{
-            fontFamily: 'Fraunces, serif',
-            fontSize: 'clamp(32px, 4vw, 52px)',
-            fontWeight: 300,
-            color: '#e8e8f0',
-            margin: 0,
-            letterSpacing: '-0.02em',
-          }}
-        >
+        <h2 className="m-0 font-serif text-[clamp(32px,4vw,52px)] font-light tracking-[-0.02em] text-[#e8e8f0]">
           Skills
         </h2>
       </div>
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))',
-          gap: '1px',
-          background: '#1e1e30',
-          border: '1px solid #1e1e30',
-        }}
-      >
+      <div className="grid grid-cols-1 gap-px border border-[#1e1e30] bg-[#1e1e30] md:grid-cols-2">
         {Object.entries(skills).map(([category, items], idx) => (
-          <div key={category} style={{ background: '#0a0a12', padding: '40px' }}>
-            <div
-              style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '28px' }}
-            >
-              <span
-                style={{
-                  fontFamily: 'JetBrains Mono, monospace',
-                  fontSize: '10px',
-                  color: '#2e2e44',
-                  letterSpacing: '0.1em',
-                }}
-              >
+          <div key={category} className="bg-[#0a0a12] p-10">
+            <div className="mb-7 flex items-center gap-2.5">
+              <span className="font-mono text-[10px] text-[#2e2e44]">
                 {String(idx + 1).padStart(2, '0')}
               </span>
-              <span
-                style={{
-                  fontFamily: 'Fraunces, serif',
-                  fontSize: '20px',
-                  fontWeight: 300,
-                  color: '#e8e8f0',
-                }}
-              >
+              <span className="font-serif text-xl font-light text-[#e8e8f0]">
                 {category}
               </span>
             </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <div className="flex flex-col gap-2.5">
               {items.map((skill) => (
-                <div key={skill} style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                  <div
-                    style={{
-                      width: '4px',
-                      height: '4px',
-                      background: '#7fffb2',
-                      borderRadius: '50%',
-                      flexShrink: 0,
-                    }}
-                  />
-                  <span style={{ fontSize: '14px', color: '#6b6b80' }}>{skill}</span>
+                <div key={skill} className="flex items-center gap-2.5">
+                  <div className="h-1 w-1 shrink-0 rounded-full bg-[#7fffb2]" />
+                  <span className="text-sm text-[#6b6b80]">{skill}</span>
                 </div>
               ))}
             </div>
