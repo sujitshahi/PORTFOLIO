@@ -3,7 +3,7 @@ export default function SkillsSection() {
   const skills: Record<string, string[]> = {
     Frontend: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
     // Backend: ['Node.js', 'Go', 'PostgreSQL', 'Redis', 'REST', 'GraphQL'],
-    Tooling: ['GitHub Actions', 'Vercel', 'Vitest'],
+    Tooling: ['GitHub Actions', 'Vercel', 'Vitest','Figma'],
   }
 
   return (
