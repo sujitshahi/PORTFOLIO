@@ -9,7 +9,7 @@ export default function SkillsSection() {
   return (
     <section
       id="skills"
-      className="border-t border-[#1e1e30] bg-[#0a0a12] px-12 py-30"
+      className="border-t border-[#1e1e30] bg-[#0a0a12] px-4 py-20 sm:px-8 md:px-12 md:py-30"
     >
       <div className="mb-16">
         <div className="mb-3 font-mono text-[11px] uppercase tracking-[0.12em] text-[#7fffb2]">
@@ -21,7 +21,7 @@ export default function SkillsSection() {
       </div>
       <div className="grid grid-cols-1 gap-px border border-[#1e1e30] bg-[#1e1e30] md:grid-cols-2">
         {Object.entries(skills).map(([category, items], idx) => (
-          <div key={category} className="bg-[#0a0a12] p-10">
+          <div key={category} className="min-w-0 bg-[#0a0a12] p-6 sm:p-10">
             <div className="mb-7 flex items-center gap-2.5">
               <span className="font-mono text-[10px] text-[#2e2e44]">
                 {String(idx + 1).padStart(2, '0')}

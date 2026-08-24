@@ -5,12 +5,6 @@ interface ContactLink {
 }
 
 const contactStyles = {
-  section: {
-    padding: '120px 48px',
-    borderTop: '1px solid #1e1e30',
-    background: '#0a0a12',
-    textAlign: 'center',
-  },
   eyebrow: {
     fontFamily: 'JetBrains Mono, monospace',
     fontSize: '11px',
@@ -31,20 +25,6 @@ const contactStyles = {
   accent: {
     color: '#7fffb2',
     fontStyle: 'italic',
-  },
-  links: {
-    display: 'flex',
-    justifyContent: 'center',
-    gap: '24px',
-    flexWrap: 'wrap',
-  },
-  link: {
-    display: 'flex',
-    flexDirection: 'column',
-    gap: '4px',
-    textDecoration: 'none',
-    padding: '20px 32px',
-    border: '1px solid #1e1e30',
   },
   linkLabel: {
     fontFamily: 'JetBrains Mono, monospace',
@@ -67,7 +47,7 @@ export default function ContactSection() {
   ]
 
   return (
-    <section id="contact" style={contactStyles.section}>
+    <section id="contact" className="contact-section">
       <div style={contactStyles.eyebrow}>
         Let&apos;s Build Something
       </div>
@@ -76,9 +56,9 @@ export default function ContactSection() {
         <br />
         <em style={contactStyles.accent}>opportunities</em>
       </h2>
-      <div style={contactStyles.links}>
+      <div className="contact-links">
         {links.map(({ label, href, value }) => (
-          <a key={label} href={href} style={contactStyles.link}>
+          <a key={label} href={href} className="contact-link">
             <span style={contactStyles.linkLabel}>{label}</span>
             <span style={contactStyles.linkValue}>{value}</span>
           </a>

@@ -1,10 +1,6 @@
 import React from 'react'
 
 const heroStyles = {
-  section: {
-    minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'flex-end',
-    padding: '0 48px 80px', position: 'relative', overflow: 'hidden',
-  },
   glow: {
     position: 'absolute', inset: 0,
     background: 'radial-gradient(ellipse 60% 50% at 70% 40%, rgba(127,255,178,0.06) 0%, transparent 60%), radial-gradient(ellipse 40% 40% at 20% 70%, rgba(127,180,255,0.04) 0%, transparent 60%)',
@@ -39,10 +35,6 @@ const heroStyles = {
     border: '1px solid #1e1e30', color: '#6b6b80', textDecoration: 'none',
     fontSize: '13px', letterSpacing: '0.04em', textTransform: 'uppercase',
   },
-  scrollIndicator: {
-    position: 'absolute', right: '48px', bottom: '80px', display: 'flex',
-    flexDirection: 'column', alignItems: 'center', gap: '8px',
-  },
   scrollLabel: {
     fontFamily: 'JetBrains Mono, monospace', fontSize: '10px', color: '#2e2e44',
     letterSpacing: '0.12em', textTransform: 'uppercase', writingMode: 'vertical-rl',
@@ -54,7 +46,7 @@ const heroStyles = {
 
 export default function Hero() {
   return (
-    <section style={heroStyles.section}>
+    <section className="hero-section">
       <div style={heroStyles.glow} />
       <div style={heroStyles.grid} />
       <div style={heroStyles.content}>
@@ -79,7 +71,7 @@ export default function Hero() {
           </a>
         </div>
       </div>
-      <div style={heroStyles.scrollIndicator}>
+      <div className="hero-scroll-indicator">
         <div style={heroStyles.scrollLabel}>
           Scroll
         </div>

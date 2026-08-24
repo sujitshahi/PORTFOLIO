@@ -34,7 +34,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    <section id="work" className="px-12 py-30">
+    <section id="work" className="px-4 py-20 sm:px-8 md:px-12 md:py-30">
       <div className="mb-16 flex flex-wrap items-end justify-between gap-6">
         <div>
           <div className="mb-3 font-mono text-[11px] uppercase tracking-[0.12em] text-[#7fffb2]">
@@ -50,7 +50,7 @@ export default function ProjectsSection() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex flex-col gap-5 bg-[#07070e] p-10 transition-colors duration-200 hover:bg-[#0f0f1a]"
+            className="flex min-w-0 flex-col gap-5 bg-[#07070e] p-6 transition-colors duration-200 hover:bg-[#0f0f1a] sm:p-10"
           >
             <div className="flex items-start justify-between">
               <div

@@ -2,16 +2,7 @@ import React from 'react'
 
 export default function AboutSection() {
   return (
-    <section
-      style={{
-        padding: '120px 48px',
-        borderTop: '1px solid #1e1e30',
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-        gap: '80px',
-        alignItems: 'center',
-      }}
-    >
+    <section className="about-section">
       <div>
         <div
           style={{
