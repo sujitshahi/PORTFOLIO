@@ -1,37 +1,16 @@
-import React from 'react'
-
 export default function AboutSection() {
   return (
-    <section className="about-section">
+    <section className="grid items-center gap-12 border-t border-[#1e1e30] px-4 py-20 sm:px-8 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] md:gap-20 md:px-12 md:py-30">
       <div>
-        <div
-          style={{
-            fontFamily: 'JetBrains Mono, monospace',
-            fontSize: '11px',
-            color: '#7fffb2',
-            letterSpacing: '0.12em',
-            textTransform: 'uppercase',
-            marginBottom: '12px',
-          }}
-        >
+        <div className="mb-3 font-mono text-[11px] uppercase tracking-[0.12em] text-[#7fffb2]">
           Background
         </div>
-        <h2
-          style={{
-            fontFamily: 'Fraunces, serif',
-            fontSize: 'clamp(28px, 3.5vw, 44px)',
-            fontWeight: 300,
-            color: '#e8e8f0',
-            margin: '0 0 24px',
-            letterSpacing: '-0.02em',
-            lineHeight: 1.15,
-          }}
-        >
+        <h2 className="m-0 mb-6 font-serif text-[clamp(28px,3.5vw,44px)] font-light leading-[1.15] tracking-[-0.02em] text-[#e8e8f0]">
           I care about the{' '}
-          <em style={{ color: '#7fffb2', fontStyle: 'italic' }}>whole system</em>, not just the UI
+          <em className="italic text-[#7fffb2]">whole system</em>, not just the UI
           layer.
         </h2>
-        <p style={{ fontSize: '15px', lineHeight: 1.8, color: '#6b6b80', margin: 0 }}>
+        <p className="m-0 text-[15px] leading-[1.8] text-[#6b6b80]">
           I recently completed my software development internship, where I contributed to practical
           projects and strengthened my frontend skills. The experience taught me how to turn ideas
           into clean, responsive interfaces that are easy to use and maintain. I also learned the

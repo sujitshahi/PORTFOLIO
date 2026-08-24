@@ -4,41 +4,6 @@ interface ContactLink {
   value: string
 }
 
-const contactStyles = {
-  eyebrow: {
-    fontFamily: 'JetBrains Mono, monospace',
-    fontSize: '11px',
-    color: '#7fffb2',
-    letterSpacing: '0.12em',
-    textTransform: 'uppercase',
-    marginBottom: '24px',
-  },
-  title: {
-    fontFamily: 'Fraunces, serif',
-    fontSize: 'clamp(36px, 6vw, 80px)',
-    fontWeight: 300,
-    color: '#e8e8f0',
-    margin: '0 0 48px',
-    letterSpacing: '-0.02em',
-    lineHeight: 1.05,
-  },
-  accent: {
-    color: '#7fffb2',
-    fontStyle: 'italic',
-  },
-  linkLabel: {
-    fontFamily: 'JetBrains Mono, monospace',
-    fontSize: '10px',
-    color: '#7fffb2',
-    letterSpacing: '0.1em',
-    textTransform: 'uppercase',
-  },
-  linkValue: {
-    fontSize: '13px',
-    color: '#6b6b80',
-  },
-} as const
-
 export default function ContactSection() {
   const links: ContactLink[] = [
     { label: 'Email', href: 'https://mail.google.com/mail/?view=cm&fs=1&to=shahisujit9@gmail.com', value: 'shahisujit9@gmail.com' },
@@ -47,20 +12,20 @@ export default function ContactSection() {
   ]
 
   return (
-    <section id="contact" className="contact-section">
-      <div style={contactStyles.eyebrow}>
+    <section id="contact" className="border-t border-[#1e1e30] bg-[#0a0a12] px-4 py-20 text-center sm:px-8 md:px-12 md:py-30">
+      <div className="mb-6 font-mono text-[11px] uppercase tracking-[0.12em] text-[#7fffb2]">
         Let&apos;s Build Something
       </div>
-      <h2 style={contactStyles.title}>
+      <h2 className="m-0 mb-12 font-serif text-[clamp(36px,6vw,80px)] font-light leading-[1.05] tracking-[-0.02em] text-[#e8e8f0]">
         Open to new
         <br />
-        <em style={contactStyles.accent}>opportunities</em>
+        <em className="italic text-[#7fffb2]">opportunities</em>
       </h2>
-      <div className="contact-links">
+      <div className="flex flex-wrap justify-center gap-6">
         {links.map(({ label, href, value }) => (
-          <a key={label} href={href} className="contact-link">
-            <span style={contactStyles.linkLabel}>{label}</span>
-            <span style={contactStyles.linkValue}>{value}</span>
+          <a key={label} href={href} className="flex w-full min-w-0 flex-col gap-1 border border-[#1e1e30] p-5 no-underline sm:w-auto sm:min-w-70 sm:px-8">
+            <span className="font-mono text-[10px] uppercase tracking-widest text-[#7fffb2]">{label}</span>
+            <span className="text-[13px] text-[#6b6b80]">{value}</span>
           </a>
         ))}
       </div>

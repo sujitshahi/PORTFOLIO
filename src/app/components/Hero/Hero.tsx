@@ -1,81 +1,35 @@
-import React from 'react'
-
-const heroStyles = {
-  glow: {
-    position: 'absolute', inset: 0,
-    background: 'radial-gradient(ellipse 60% 50% at 70% 40%, rgba(127,255,178,0.06) 0%, transparent 60%), radial-gradient(ellipse 40% 40% at 20% 70%, rgba(127,180,255,0.04) 0%, transparent 60%)',
-    pointerEvents: 'none',
-  },
-  grid: {
-    position: 'absolute', inset: 0,
-    backgroundImage: 'linear-gradient(rgba(30,30,48,0.4) 1px, transparent 1px), linear-gradient(90deg, rgba(30,30,48,0.4) 1px, transparent 1px)',
-    backgroundSize: '64px 64px', pointerEvents: 'none',
-  },
-  content: { position: 'relative', maxWidth: '900px' },
-  availability: {
-    fontFamily: 'JetBrains Mono, monospace', fontSize: '12px', color: '#7fffb2',
-    letterSpacing: '0.1em', marginBottom: '24px', textTransform: 'uppercase',
-  },
-  title: {
-    fontFamily: 'Fraunces, serif', fontSize: 'clamp(52px, 8vw, 108px)', fontWeight: 300,
-    lineHeight: 1.0, letterSpacing: '-0.02em', color: '#e8e8f0', margin: '0 0 24px',
-  },
-  accent: { fontStyle: 'italic', fontWeight: 300, color: '#7fffb2' },
-  description: {
-    fontSize: '17px', lineHeight: 1.7, color: '#6b6b80', maxWidth: '520px', margin: '0 0 48px',
-  },
-  actions: { display: 'flex', gap: '16px', flexWrap: 'wrap' },
-  primaryAction: {
-    display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '12px 28px',
-    background: '#7fffb2', color: '#07070e', textDecoration: 'none', fontSize: '13px',
-    fontWeight: 600, letterSpacing: '0.04em', textTransform: 'uppercase',
-  },
-  secondaryAction: {
-    display: 'inline-flex', alignItems: 'center', padding: '12px 28px',
-    border: '1px solid #1e1e30', color: '#6b6b80', textDecoration: 'none',
-    fontSize: '13px', letterSpacing: '0.04em', textTransform: 'uppercase',
-  },
-  scrollLabel: {
-    fontFamily: 'JetBrains Mono, monospace', fontSize: '10px', color: '#2e2e44',
-    letterSpacing: '0.12em', textTransform: 'uppercase', writingMode: 'vertical-rl',
-  },
-  scrollLine: {
-    width: '1px', height: '48px', background: 'linear-gradient(to bottom, #2e2e44, transparent)',
-  },
-} satisfies Record<string, React.CSSProperties>
-
 export default function Hero() {
   return (
-    <section className="hero-section">
-      <div style={heroStyles.glow} />
-      <div style={heroStyles.grid} />
-      <div style={heroStyles.content}>
-        <div style={heroStyles.availability}>
+    <section className="relative flex min-h-205 flex-col justify-end overflow-hidden px-4 pb-12 sm:px-8 sm:pb-20 md:min-h-screen md:px-12">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_70%_40%,rgba(127,255,178,0.06)_0%,transparent_60%),radial-gradient(ellipse_40%_40%_at_20%_70%,rgba(127,180,255,0.04)_0%,transparent_60%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(30,30,48,0.4)_1px,transparent_1px),linear-gradient(90deg,rgba(30,30,48,0.4)_1px,transparent_1px)] bg-size[64px_64px]" />
+      <div className="relative max-w-225">
+        <div className="mb-6 font-mono text-xs uppercase tracking-widest text-[#7fffb2]">
           Available for work · 2026
         </div>
-        <h1 style={heroStyles.title}>
+        <h1 className="m-0 mb-6 font-serif text-[clamp(52px,8vw,108px)] font-light leading-none tracking-[-0.02em] text-[#e8e8f0]">
           Sujit Shahi
           <br />
-          <em style={heroStyles.accent}>Frontend</em>{' '}
+          <em className="font-light italic text-[#7fffb2]">Frontend</em>{' '}
           Developer
         </h1>
-        <p style={heroStyles.description}>
+        <p className="mb-12 max-w-130 text-[17px] leading-[1.7] text-[#6b6b80]">
           I spend my time building frontend interfaces and continuously learning more about full-stack development.
         </p>
-        <div style={heroStyles.actions}>
-          <a href="#work" style={heroStyles.primaryAction}>
+        <div className="flex flex-wrap gap-4">
+          <a href="#work" className="inline-flex items-center gap-2 bg-[#7fffb2] px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.04em] text-[#07070e] no-underline">
             View Projects
           </a>
-          <a href="#contact" style={heroStyles.secondaryAction}>
+          <a href="#contact" className="inline-flex items-center border border-[#1e1e30] px-7 py-3 text-[13px] uppercase tracking-[0.04em] text-[#6b6b80] no-underline">
             Get in Touch
           </a>
         </div>
       </div>
-      <div className="hero-scroll-indicator">
-        <div style={heroStyles.scrollLabel}>
+      <div className="absolute bottom-20 right-12 hidden flex-col items-center gap-2 md:flex">
+        <div className="font-mono text-[10px] uppercase tracking-[0.12em] text-[#2e2e44] [writing-mode:vertical-rl]">
           Scroll
         </div>
-        <div style={heroStyles.scrollLine} />
+        <div className="h-12 w-px bg-linear-to-b from-[#2e2e44] to-transparent" />
       </div>
     </section>
   )
