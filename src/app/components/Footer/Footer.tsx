@@ -14,7 +14,7 @@ export default function Footer() {
       }}
     >
       <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '11px', color: '#2e2e44' }}>
-        {'<alex.dev />'} · 2026
+        {'<sujitshahi />'} · 2026
       </span>
       <span style={{ fontFamily: 'JetBrains Mono, monospace', fontSize: '11px', color: '#2e2e44' }}>
         Built with Next.js
