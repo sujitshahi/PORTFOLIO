@@ -25,23 +25,41 @@ export default function Hero() {
           >
           Available for work · 2026
           </m.div>
-          <h1 className="m-0 mb-6 font-serif text-[clamp(52px,8vw,108px)] font-light leading-none tracking-[-0.02em] text-[#e8e8f0]">
+          <m.h1
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
+            whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: shouldReduceMotion ? 0 : 0.35, type: 'spring', stiffness: 70 }}
+            className="m-0 mb-6 font-serif text-[clamp(52px,8vw,108px)] font-light leading-none tracking-[-0.02em] text-[#e8e8f0]"
+          >
           Sujit Shahi
           <br />
           <em className="font-light italic text-[#7fffb2]">Frontend</em>{' '}
           Developer
-          </h1>
-          <p className="mb-12 max-w-130 text-[17px] leading-[1.7] text-[#6b6b80]">
+          </m.h1>
+          <m.p
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
+            whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: shouldReduceMotion ? 0 : 0.5, type: 'spring', stiffness: 70 }}
+            className="mb-12 max-w-130 text-[17px] leading-[1.7] text-[#6b6b80]"
+          >
           I spend my time building frontend interfaces and continuously learning more about full-stack development.
-          </p>
-          <div className="flex flex-wrap gap-4">
+          </m.p>
+          <m.div
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 20 }}
+            whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: shouldReduceMotion ? 0 : 0.65, type: 'spring', stiffness: 70 }}
+            className="flex flex-wrap gap-4"
+          >
           <a href="#work" className="inline-flex items-center gap-2 bg-[#7fffb2] px-7 py-3 text-[13px] font-semibold uppercase tracking-[0.04em] text-[#07070e] no-underline">
             View Projects
           </a>
           <a href="#contact" className="inline-flex items-center border border-[#1e1e30] px-7 py-3 text-[13px] uppercase tracking-[0.04em] text-[#6b6b80] no-underline">
             Get in Touch
           </a>
-          </div>
+          </m.div>
         </m.div>
         <div className="absolute bottom-20 right-12 hidden flex-col items-center gap-2 md:flex">
         <div className="font-mono text-[10px] uppercase tracking-[0.12em] text-[#2e2e44] [writing-mode:vertical-rl]">

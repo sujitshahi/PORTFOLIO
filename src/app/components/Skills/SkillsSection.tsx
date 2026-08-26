@@ -37,7 +37,9 @@ export default function SkillsSection() {
             whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0, scale: 1 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ delay: shouldReduceMotion ? 0 : idx * 0.2 + 0.2, type: 'spring', stiffness: 70 }}
-            className="min-w-0 bg-[#0a0a12] p-6 sm:p-10"
+            className={`min-w-0 bg-[#0a0a12] p-6 sm:p-10 ${
+              idx === 0 ? 'md:border-r md:border-[#1e1e30]' : ''
+            }`}
           >
             <div className="mb-7 flex items-center gap-2.5">
               <span className="font-mono text-[10px] text-[#2e2e44]">
