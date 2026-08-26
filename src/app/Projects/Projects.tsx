@@ -64,7 +64,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-px border border-[#1e1e30] bg-[#1e1e30] md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-px border border-[#1e1e30] bg-[#1e1e30]">
           {projectsData.map((project, index) => (
             <m.div
               initial={shouldReduceMotion ? false : { opacity: 0, y: 80, scale: 0.96 }}
