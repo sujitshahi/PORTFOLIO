@@ -9,7 +9,7 @@ export default function Hero() {
     <LazyMotion features={domAnimation}>
       <section className="relative flex min-h-205 flex-col justify-end overflow-hidden px-4 pb-12 sm:px-8 sm:pb-20 md:min-h-screen md:px-12">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_60%_50%_at_70%_40%,rgba(127,255,178,0.06)_0%,transparent_60%),radial-gradient(ellipse_40%_40%_at_20%_70%,rgba(127,180,255,0.04)_0%,transparent_60%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(30,30,48,0.4)_1px,transparent_1px),linear-gradient(90deg,rgba(30,30,48,0.4)_1px,transparent_1px)] bg-size[64px_64px]" />
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(rgba(30,30,48,0.4)_1px,transparent_1px),linear-gradient(90deg,rgba(30,30,48,0.4)_1px,transparent_1px)] bg-size-[64px_64px]" />
         <m.div
           initial={shouldReduceMotion ? false : { opacity: 0, y: 80, scale: 0.96 }}
           whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0, scale: 1 }}

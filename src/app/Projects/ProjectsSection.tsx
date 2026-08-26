@@ -56,12 +56,12 @@ export default function ProjectsSection() {
         </div>
       </div>
 
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,480px),1fr))] gap-px border border-[#1e1e30] bg-[#1e1e30]">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,480px),1fr))] gap-px border border-[#1e1e30] bg-[#07070e]">
         {projects.map((project, index) => (
           <m.div
             key={project.id}
-            initial={shouldReduceMotion ? false : { opacity: 0, y: 80, scale: 0.96 }}
-            whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0, scale: 1 }}
+            initial={shouldReduceMotion ? false : { y: 80, scale: 0.96 }}
+            whileInView={shouldReduceMotion ? {} : { y: 0, scale: 1 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ delay: shouldReduceMotion ? 0 : index * 0.2 + 0.2, type: 'spring', stiffness: 70 }}
             className="flex min-w-0 flex-col gap-5 bg-[#07070e] p-6 transition-colors duration-200 hover:bg-[#0f0f1a] sm:p-10"

@@ -10,7 +10,7 @@ export default function Footer() {
     <m.footer
       initial={shouldReduceMotion ? false : { opacity: 0, y: 80, scale: 0.96 }}
       whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0, scale: 1 }}
-      viewport={{ once: true, margin: '-100px' }}
+      viewport={{ once: true }}
       transition={{ delay: shouldReduceMotion ? 0 : 0.2, type: 'spring', stiffness: 70 }}
       className="flex flex-wrap items-center justify-between gap-3 border-t border-[#1e1e30] px-4 py-6 sm:px-8 sm:py-8 md:px-12"
     >

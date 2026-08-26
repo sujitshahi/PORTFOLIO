@@ -29,7 +29,7 @@ export default function SkillsSection() {
           Skills
         </h2>
       </m.div>
-      <div className="grid grid-cols-1 gap-px border border-[#1e1e30] bg-[#1e1e30] md:grid-cols-2">
+      <div className="grid grid-cols-1 gap-px border border-[#1e1e30] bg-[#0a0a12] md:grid-cols-2">
         {Object.entries(skills).map(([category, items], idx) => (
           <m.div
             key={category}
