@@ -1,6 +1,8 @@
 
 'use client'
 
+import { LazyMotion, domAnimation, m, useReducedMotion } from 'framer-motion'
+
 const projects = [
   {
     id: 1,
@@ -33,23 +35,35 @@ const projects = [
 ]
 
 export default function ProjectsSection() {
+  const shouldReduceMotion = useReducedMotion()
+
   return (
+    <LazyMotion features={domAnimation}>
     <section id="work" className="px-4 py-20 sm:px-8 md:px-12 md:py-30">
       <div className="mb-16 flex flex-wrap items-end justify-between gap-6">
         <div>
           <div className="mb-3 font-mono text-[11px] uppercase tracking-[0.12em] text-[#7fffb2]">
             Selected Work
           </div>
-          <h2 className="m-0 font-serif text-[clamp(32px,4vw,52px)] font-light tracking-[-0.02em] text-[#e8e8f0]">
+          <m.h2
+            initial={shouldReduceMotion ? false : { opacity: 0, x: -20 }}
+            whileInView={shouldReduceMotion ? {} : { opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="m-0 font-serif text-[clamp(32px,4vw,52px)] font-light tracking-[-0.02em] text-[#e8e8f0]"
+          >
             Projects
-          </h2>
+          </m.h2>
         </div>
       </div>
 
       <div className="grid grid-cols-[repeat(auto-fill,minmax(min(100%,480px),1fr))] gap-px border border-[#1e1e30] bg-[#1e1e30]">
-        {projects.map((project) => (
-          <div
+        {projects.map((project, index) => (
+          <m.div
             key={project.id}
+            initial={shouldReduceMotion ? false : { opacity: 0, y: 80, scale: 0.96 }}
+            whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, margin: '-100px' }}
+            transition={{ delay: shouldReduceMotion ? 0 : index * 0.2 + 0.2, type: 'spring', stiffness: 70 }}
             className="flex min-w-0 flex-col gap-5 bg-[#07070e] p-6 transition-colors duration-200 hover:bg-[#0f0f1a] sm:p-10"
           >
             <div className="flex items-start justify-between">
@@ -107,9 +121,10 @@ export default function ProjectsSection() {
                 </a>
               )}
             </div>
-          </div>
+          </m.div>
         ))}
       </div>
     </section>
+    </LazyMotion>
   )
 }

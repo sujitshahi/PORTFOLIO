@@ -1,7 +1,24 @@
+"use client"
+
+import { LazyMotion, domAnimation, m, useReducedMotion } from 'framer-motion'
+
 export default function AboutSection() {
+  const shouldReduceMotion = useReducedMotion()
+
   return (
-    <section className="grid items-center gap-12 border-t border-[#1e1e30] px-4 py-20 sm:px-8 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] md:gap-20 md:px-12 md:py-30">
-      <div>
+    <LazyMotion features={domAnimation}>
+      <m.section
+        initial={shouldReduceMotion ? false : { opacity: 0, y: 80, scale: 0.96 }}
+        whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0, scale: 1 }}
+        viewport={{ once: true, margin: '-100px' }}
+        transition={{ delay: shouldReduceMotion ? 0 : 0.2, type: 'spring', stiffness: 70 }}
+        className="grid items-center gap-12 border-t border-[#1e1e30] px-4 py-20 sm:px-8 md:grid-cols-[repeat(auto-fit,minmax(300px,1fr))] md:gap-20 md:px-12 md:py-30"
+      >
+      <m.div
+        initial={shouldReduceMotion ? false : { opacity: 0, x: -20 }}
+        whileInView={shouldReduceMotion ? {} : { opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+      >
         <div className="mb-3 font-mono text-[11px] uppercase tracking-[0.12em] text-[#7fffb2]">
           Background
         </div>
@@ -17,7 +34,8 @@ export default function AboutSection() {
           importance of collaboration, clear communication, and thoughtful problem-solving when
           building software as part of a team.
         </p>
-      </div>
-    </section>
+      </m.div>
+      </m.section>
+    </LazyMotion>
   )
 }
