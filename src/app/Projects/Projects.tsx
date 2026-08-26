@@ -64,7 +64,7 @@ export default function Projects() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-px border border-[#1e1e30] bg-[#1e1e30]">
+        <div className="grid grid-cols-1 gap-px border border-[#1e1e30] bg-[#1e1e30] md:grid-cols-2">
           {projectsData.map((project, index) => (
             <m.div
               initial={shouldReduceMotion ? false : { opacity: 0, y: 80, scale: 0.96 }}
@@ -76,7 +76,7 @@ export default function Projects() {
                 transition: { duration: 0.3 } 
               }}
               key={project.id} 
-              className="group flex flex-col gap-5 bg-[#07070e] p-10 transition-colors duration-200 hover:bg-[#0f0f1a]"
+              className="group flex min-w-0 flex-col gap-5 bg-[#07070e] p-6 transition-colors duration-200 hover:bg-[#0f0f1a] sm:p-10"
             >
               {project.thumbnail && (
                 <div className="relative -mx-10 -mt-10 h-56 overflow-hidden border-b border-[#1e1e30] bg-[#07070e]">
@@ -97,13 +97,13 @@ export default function Projects() {
               )}
 
               <div className="flex flex-1 flex-col gap-5">
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex flex-wrap items-start justify-between gap-4">
                   <m.span
                     initial={shouldReduceMotion ? false : { opacity: 0, x: -10 }}
                     whileInView={shouldReduceMotion ? {} : { opacity: 1, x: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: shouldReduceMotion ? 0 : index * 0.2 + 0.2 }}
-                    className="inline-flex items-center gap-1.5 border border-[#7fffb2]/15 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.08em] text-[#7fffb2]"
+                    className="inline-flex max-w-full items-center gap-1.5 border border-[#7fffb2]/15 px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.08em] text-[#7fffb2]"
                   >
                     <span className="h-1.5 w-1.5 rounded-full bg-[#7fffb2]" />
                     {project.category}
@@ -158,7 +158,7 @@ export default function Projects() {
                     whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: shouldReduceMotion ? 0 : index * 0.2 + 0.6 }}
-                    className="mt-3 flex items-center gap-5"
+                    className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2"
                   >
                     <m.a 
                       whileHover={shouldReduceMotion ? {} : { x: 6, scale: 1.05 }}

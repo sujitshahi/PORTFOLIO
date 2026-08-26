@@ -62,14 +62,22 @@ export default function ProjectsSection() {
             key={project.id}
             initial={shouldReduceMotion ? false : { y: 80, scale: 0.96 }}
             whileInView={shouldReduceMotion ? {} : { y: 0, scale: 1 }}
+            whileHover={shouldReduceMotion ? {} : { y: -8 }}
+            whileTap={shouldReduceMotion ? {} : { scale: 0.99 }}
             viewport={{ once: true, margin: '-100px' }}
             transition={{ delay: shouldReduceMotion ? 0 : index * 0.2 + 0.2, type: 'spring', stiffness: 70 }}
             className={`flex min-w-0 flex-col gap-5 bg-[#07070e] p-6 transition-colors duration-200 hover:bg-[#0f0f1a] sm:p-10 ${
               index === 0 ? 'md:border-r md:border-[#1e1e30]' : ''
             }`}
           >
-            <div className="flex items-start justify-between">
-              <div
+            <m.div
+              initial={shouldReduceMotion ? false : { opacity: 0, x: -12 }}
+              whileInView={shouldReduceMotion ? {} : { opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: shouldReduceMotion ? 0 : index * 0.2 + 0.35 }}
+              className="flex items-start justify-between"
+            >
+              <m.div
                 className={`inline-flex items-center gap-1.5 rounded-sm border px-2.5 py-1 font-mono text-[10px] uppercase tracking-[0.08em] ${
                   project.id === 1
                     ? 'border-[#7fffb2]/15 text-[#7fffb2]'
@@ -78,51 +86,80 @@ export default function ProjectsSection() {
               >
                 <span className="inline-block h-1.5 w-1.5 rounded-full bg-current" />
                 <span>{project.tag}</span>
-              </div>
+              </m.div>
               <span className="font-mono text-[11px] text-[#2e2e44]">{project.year}</span>
-            </div>
+            </m.div>
 
-            <div>
-              <h3 className="m-0 mb-3 font-serif text-[28px] font-light tracking-[-0.01em] text-[#e8e8f0]">
+            <m.div
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 16 }}
+              whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: shouldReduceMotion ? 0 : index * 0.2 + 0.45, type: 'spring', stiffness: 70 }}
+            >
+              <m.h3
+                whileHover={shouldReduceMotion ? {} : { x: 6, color: project.accent }}
+                transition={{ duration: 0.25 }}
+                className="m-0 mb-3 font-serif text-[28px] font-light tracking-[-0.01em] text-[#e8e8f0]"
+              >
                 {project.title}
-              </h3>
+              </m.h3>
               <p className="m-0 text-sm leading-[1.7] text-[#6b6b80]">{project.description}</p>
-            </div>
+            </m.div>
 
-            <div className="mt-auto flex flex-wrap gap-1.5">
-              {project.stack.map((tech) => (
-                <span
+            <m.div
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
+              whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: shouldReduceMotion ? 0 : index * 0.2 + 0.55 }}
+              className="mt-auto flex flex-wrap gap-1.5"
+            >
+              {project.stack.map((tech, techIndex) => (
+                <m.span
                   key={tech}
+                  initial={shouldReduceMotion ? false : { opacity: 0, scale: 0.85 }}
+                  whileInView={shouldReduceMotion ? {} : { opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: shouldReduceMotion ? 0 : index * 0.2 + techIndex * 0.08 + 0.55, type: 'spring', stiffness: 180 }}
                   className="border border-[#1e1e30] px-2 py-0.5 font-mono text-[10px] tracking-[0.06em] text-[#2e2e44]"
                 >
                   {tech}
-                </span>
+                </m.span>
               ))}
-            </div>
+            </m.div>
 
-            <div className="mt-3 flex items-center gap-5">
+            <m.div
+              initial={shouldReduceMotion ? false : { opacity: 0, y: 12 }}
+              whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: shouldReduceMotion ? 0 : index * 0.2 + 0.7 }}
+              className="mt-3 flex flex-wrap items-center gap-x-5 gap-y-2"
+            >
               {project.link && project.link !== '#' && (
-                <a
+                <m.a
+                  whileHover={shouldReduceMotion ? {} : { x: 6 }}
+                  whileTap={shouldReduceMotion ? {} : { scale: 0.95 }}
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.04em] text-[#6b6b80] no-underline transition-colors hover:text-[#7fffb2]"
                 >
                   {project.linkText} <span className="text-sm">→</span>
-                </a>
+                </m.a>
               )}
 
               {project.liveLink && project.liveLink !== '#' && (
-                <a
+                <m.a
+                  whileHover={shouldReduceMotion ? {} : { x: 6 }}
+                  whileTap={shouldReduceMotion ? {} : { scale: 0.95 }}
                   href={project.liveLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 font-mono text-xs uppercase tracking-[0.04em] text-[#6b6b80] no-underline transition-colors hover:text-[#7fffb2]"
                 >
                   {project.liveLinkText} <span className="text-sm">⚡</span>
-                </a>
+                </m.a>
               )}
-            </div>
+            </m.div>
           </m.div>
         ))}
       </div>

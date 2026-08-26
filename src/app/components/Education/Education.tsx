@@ -6,7 +6,7 @@ export default function Education() {
   return (
     <LazyMotion features={domAnimation}>
       <section id="credentials" className="scroll-mt-24 space-y-8 border-t border-[#1e1e30] px-4 py-20 sm:px-8 md:px-12 md:py-30">
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center">
           <m.h2 
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -68,8 +68,8 @@ export default function Education() {
                 <h4 className="font-semibold text-white">Performance Optimization</h4>
                 <p className="text-xs text-zinc-400 mt-1">Improving performance, usability, and frontend delivery quality.</p>
               </div>
-              <div 
-                className="flex items-center justify-between rounded-2xl border border-zinc-800/60 bg-zinc-950/70 p-4"
+                <div 
+                  className="flex flex-col items-start gap-3 rounded-2xl border border-zinc-800/60 bg-zinc-950/70 p-4 sm:flex-row sm:items-center sm:justify-between"
               >
                 <div>
                   <h4 className="font-semibold text-white">MindRisers Certification</h4>
@@ -79,7 +79,7 @@ export default function Education() {
                   href="https://www.mindrisers.com.np/certificate/validate/MR-82006-WD" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  className="ml-4 whitespace-nowrap text-xs font-bold text-[#7fffb2] hover:underline"
+                  className="text-xs font-bold text-[#7fffb2] hover:underline sm:ml-4 sm:whitespace-nowrap"
                 >
                   Verify →
                 </m.a>

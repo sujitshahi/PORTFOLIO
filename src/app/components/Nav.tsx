@@ -19,7 +19,7 @@ export default function Nav() {
       <span className="font-mono text-[13px] tracking-[0.02em] text-[#7fffb2]">
         Sujit Shahi
       </span>
-      <div className="flex flex-wrap justify-end gap-x-4 gap-y-2 sm:gap-8">
+      <div className="flex flex-wrap justify-end gap-x-3 gap-y-2 sm:gap-8">
         {navItems.map(({ label, href }) => (
           <Link
             key={label}
