@@ -15,13 +15,13 @@ export default function Education() {
           >
             Education & Credentials
           </m.h2>
-          <m.div 
+          {/* <m.div 
             initial={{ scaleX: 0 }}
             whileInView={{ scaleX: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
-            className="h-px origin-left flex-1 bg-linear-to-r from-[#7fffb2]/80 via-[#7fffb2]/40 to-transparent" 
-          />
+            // className="h-px origin-left flex-1 bg-linear-to-r from-[#7fffb2]/80 via-[#7fffb2]/40 to-transparent" 
+          /> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
