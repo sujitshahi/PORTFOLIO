@@ -12,7 +12,7 @@ export default function Footer() {
       whileInView={shouldReduceMotion ? {} : { opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true }}
       transition={{ delay: shouldReduceMotion ? 0 : 0.2, type: 'spring', stiffness: 70 }}
-      className="flex flex-wrap items-center justify-between gap-3 border-t border-[#1e1e30] px-4 py-6 sm:px-8 sm:py-8 md:px-12"
+      className="flex flex-wrap    items-center justify-between gap-3 border-t border-[#1e1e30] px-4 py-6 sm:px-8 sm:py-8 md:px-12"
     >
       <span className="font-mono text-[11px] text-[#2e2e44]">
         {'<sujitshahi />'} · 2026
