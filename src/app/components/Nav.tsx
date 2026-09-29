@@ -14,8 +14,8 @@ export default function Nav() {
     { label: 'Contact', href: '#contact' },
   ]
 
-  return (
-    <nav className="fixed inset-x-0 top-0 z-50 flex items-center justify-between border-b border-[#1e1e30] bg-[rgba(7,7,14,0.85)] px-4 py-5 backdrop-blur-md sm:px-8 md:px-12">
+  return (  
+    <nav className="fixed   inset-x-0 top-0 z-50 flex items-center justify-between border-b border-[#1e1e30] bg-[rgba(7,7,14,0.85)] px-4 py-5 backdrop-blur-md sm:px-8 md:px-12">
       <span className="font-mono text-[13px] tracking-[0.02em] text-[#7fffb2]">
         Sujit Shahi
       </span>
