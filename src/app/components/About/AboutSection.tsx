@@ -24,7 +24,7 @@ export default function AboutSection() {
         </div>
         <h2 className="m-0 mb-6 font-serif text-[clamp(28px,3.5vw,44px)] font-light leading-[1.15] tracking-[-0.02em] text-[#e8e8f0]">
           I care about the{' '}
-          <em className="italic text-[#7fffb2]">whole system</em>, not just the UI
+          <em className="italic   text-[#7fffb2]">whole system</em>, not just the UI
           layer.
         </h2>
         <p className="m-0 text-[15px] leading-[1.8] text-[#6b6b80]">
